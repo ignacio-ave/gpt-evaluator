@@ -3,6 +3,9 @@
 
 Este proyecto tiene como objetivo procesar y evaluar respuestas utilizando el modelo GPT de OpenAI. El código se ha modularizado y estructurado para facilitar su mantenimiento y comprensión.
 
+![Descripción de la imagen](data/graph.svg)
+
+
 [Accede al Colab aquí](https://colab.research.google.com/drive/1_Po1Dpva-kuPb8af2sKtXW9uDwcW2FpH?usp=sharing)
 
 ## Estructura del proyecto
