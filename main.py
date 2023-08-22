@@ -197,6 +197,29 @@ def load_questions_from_excel(filepath):
         questions.append(question_info)
     return questions
 
+def ensure_settings_exists():
+    """Asegura que exista un archivo settings.json. Si no existe, lo crea solicitando los parámetros al usuario."""
+    
+    if not os.path.exists("settings.json"):
+        print("Archivo settings.json no encontrado. Vamos a crear uno.")
+        
+        openai_token = input("Por favor, ingresa tu token de OpenAI: ").strip()
+        max_tokens = input("Por favor, ingresa el número máximo de tokens (sugerencia: 500): ").strip() or "500"
+        max_attempts = input("Por favor, ingresa el número máximo de intentos (sugerencia: 3): ").strip() or "3"
+        data_folder_path = input("Por favor, ingresa la ruta de la carpeta de datos: ").strip()
+        
+        settings = {
+            "openai_token": openai_token,
+            "max_tokens": int(max_tokens),
+            "max_attempts": int(max_attempts),
+            "data_folder_path": data_folder_path
+        }
+        
+        save_settings(settings)
+
+        print("Archivo settings.json creado exitosamente.")
+    else:
+        print("Archivo settings.json encontrado.")
 
 def load_settings():
     """Carga configuraciones desde settings.json"""
@@ -269,7 +292,26 @@ def display_results(responses):
 
 
 def main():
-    """  """
+    """
+    Función principal que coordina el flujo del programa.
+
+    1. Verifica la existencia del archivo settings.json y, si no existe, crea uno solicitando los parámetros necesarios al usuario.
+    2. Inicializa las configuraciones y la conexión con OpenAI.
+    3. Ofrece al usuario la opción de cargar datos previamente guardados o nuevos datos.
+    4. Si se elige cargar datos previos:
+        - Carga las respuestas y evaluaciones previas.
+        - Si hay un error al cargar, procesa nuevos datos.
+        - Si no hay error, muestra las respuestas previamente generadas.
+        - Ofrece la opción de procesar nuevos datos.
+    5. Si se elige cargar nuevos datos o continuar con nuevos datos:
+        - Carga datos de estudiantes y preguntas.
+        - Genera prompts y obtiene respuestas de OpenAI.
+        - Guarda las respuestas y evaluaciones en archivos.
+        - Muestra las respuestas obtenidas.
+
+    Esta función se ejecuta cuando el script es llamado directamente.
+    """
+    ensure_settings_exists()
     init()
     
     # Opción para cargar datos previamente guardados o nuevos datos
