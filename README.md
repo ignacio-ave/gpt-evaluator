@@ -3,6 +3,8 @@
 
 Este proyecto tiene como objetivo procesar y evaluar respuestas utilizando el modelo GPT de OpenAI. El código se ha modularizado y estructurado para facilitar su mantenimiento y comprensión.
 
+[Accede al Colab aquí](https://colab.research.google.com/drive/1_Po1Dpva-kuPb8af2sKtXW9uDwcW2FpH?usp=sharing)
+
 ## Estructura del proyecto
 
 El proyecto consta de varios archivos y carpetas:
@@ -85,11 +87,6 @@ Dentro de este archivo, encontramos las siguientes funciones clave:
 
 - **`main()`**: 
     - **Descripción**: Función principal que coordina todas las operaciones, desde la carga de datos hasta la visualización de resultados.
-
-
-## Contribuciones
-
-Si deseas contribuir al proyecto, asegúrate de escribir pruebas para cualquier nueva función o método y de seguir las convenciones de código existentes.
 
 ## Licencia
 
