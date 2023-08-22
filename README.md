@@ -30,20 +30,6 @@ python main.py
 
 Asegúrate de tener todos los archivos de entrada necesarios y de seguir las instrucciones en la consola.
 
-## Pruebas
-
-Para ejecutar las pruebas unitarias, navega a la carpeta `tests/` y ejecuta:
-
-```bash
-python test_<nombre_del_archivo>.py
-```
-
-Por ejemplo, para ejecutar las pruebas de `json_utils`, usarías:
-
-```bash
-python test_json_utils.py
-```
-
 ## Contribuciones
 
 Si deseas contribuir al proyecto, asegúrate de escribir pruebas para cualquier nueva función o método y de seguir las convenciones de código existentes.
