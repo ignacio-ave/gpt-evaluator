@@ -1,10 +1,4 @@
 pandas
-re
 openai
 pydantic
-langchain
-hashlib
-json
-os
-getpass
 langchain
