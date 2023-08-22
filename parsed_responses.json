@@ -1,0 +1,172 @@
+[
+    {
+        "estructura": "Desconocido",
+        "pregunta": "Es recomendable usar colas con prioridad cuando todos los elementos tienen la misma prioridad",
+        "respuesta": "Falso",
+        "correctitud": {
+            "razonamiento": "La respuesta es correcta. Las colas con prioridad se utilizan cuando los elementos tienen diferentes niveles de prioridad.",
+            "puntaje": 3.0
+        },
+        "claridad": {
+            "razonamiento": "La respuesta es clara y concisa.",
+            "puntaje": 3.0
+        },
+        "relevancia": {
+            "razonamiento": "La respuesta es relevante para la pregunta ya que proporciona informaci\u00f3n sobre el uso adecuado de las colas con prioridad.",
+            "puntaje": 3.0
+        }
+    },
+    {
+        "estructura": "Desconocido",
+        "pregunta": "El \u00e1rbol B/B+ es \u00fatil para la implementaci\u00f3n de algoritmos de b\u00fasqueda en grafos, ya que permite una r\u00e1pida b\u00fasqueda de nodos y aristas",
+        "respuesta": "Falso",
+        "correctitud": {
+            "razonamiento": "La respuesta es correcta. El \u00e1rbol B/B+ es una estructura de datos utilizada principalmente en bases de datos para almacenar y recuperar datos de manera eficiente. No es espec\u00edficamente \u00fatil para la implementaci\u00f3n de algoritmos de b\u00fasqueda en grafos.",
+            "puntaje": 3.0
+        },
+        "claridad": {
+            "razonamiento": "La respuesta es clara y concisa, indicando claramente que es falsa.",
+            "puntaje": 3.0
+        },
+        "relevancia": {
+            "razonamiento": "La respuesta es relevante, ya que aborda directamente la pregunta y proporciona informaci\u00f3n correcta sobre el \u00e1rbol B/B+.",
+            "puntaje": 3.0
+        }
+    },
+    {
+        "estructura": "Desconocido",
+        "pregunta": "Se puede usar grafos para modelar sistemas de recomendaci\u00f3n, como en aplicaciones de comercio electr\u00f3nico o de pel\u00edculas, ya que los grafos pueden representar las preferencias de los usuarios y las relaciones entre productos o pel\u00edculas",
+        "respuesta": "Verdadero",
+        "correctitud": {
+            "razonamiento": "La respuesta es correcta ya que los grafos son una estructura de datos vers\u00e1til que se puede utilizar para representar relaciones entre elementos. En el caso de los sistemas de recomendaci\u00f3n, los grafos pueden representar las preferencias de los usuarios y las relaciones entre los productos o pel\u00edculas, lo que permite generar recomendaciones personalizadas.",
+            "puntaje": 3.0
+        },
+        "claridad": {
+            "razonamiento": "La respuesta es clara y precisa. Explica de manera concisa c\u00f3mo los grafos pueden ser utilizados para modelar sistemas de recomendaci\u00f3n en aplicaciones de comercio electr\u00f3nico o pel\u00edculas.",
+            "puntaje": 3.0
+        },
+        "relevancia": {
+            "razonamiento": "La respuesta es altamente relevante, ya que aborda directamente la pregunta planteada y da una respuesta completa y acertada sobre c\u00f3mo los grafos pueden ser utilizados en sistemas de recomendaci\u00f3n.",
+            "puntaje": 3.0
+        }
+    },
+    {
+        "estructura": "Desconocido",
+        "pregunta": "Al igual que un mont\u00edculo, un \u00e1rbol AVL tambi\u00e9n se podr\u00eda implementar usando un arreglo.",
+        "respuesta": "Verdadero",
+        "correctitud": {
+            "razonamiento": "La respuesta es correcta. Ambas estructuras, mont\u00edculo y \u00e1rbol AVL, pueden ser implementadas utilizando un arreglo.",
+            "puntaje": 3.0
+        },
+        "claridad": {
+            "razonamiento": "La respuesta es clara y concisa. No hay ambig\u00fcedad en la afirmaci\u00f3n.",
+            "puntaje": 3.0
+        },
+        "relevancia": {
+            "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta planteada.",
+            "puntaje": 3.0
+        }
+    },
+    {
+        "estructura": "Desconocido",
+        "pregunta": "En un \u00e1rbol B, la operaci\u00f3n de b\u00fasqueda tiene una complejidad de tiempo constante, independientemente del n\u00famero de elementos almacenados en el \u00e1rbol",
+        "respuesta": "Falso",
+        "correctitud": {
+            "razonamiento": "La respuesta es correcta. En un \u00e1rbol B, la operaci\u00f3n de b\u00fasqueda tiene una complejidad de tiempo logar\u00edtmica en el peor caso, ya que se debe buscar en cada nivel del \u00e1rbol hasta llegar a la hoja donde se encuentra el elemento buscado.",
+            "puntaje": 3.0
+        },
+        "claridad": {
+            "razonamiento": "La respuesta es clara y precisa al afirmar que la operaci\u00f3n de b\u00fasqueda no tiene una complejidad de tiempo constante en un \u00e1rbol B. Explica brevemente por qu\u00e9 no es constante.",
+            "puntaje": 3.0
+        },
+        "relevancia": {
+            "razonamiento": "La respuesta es relevante ya que aborda directamente la complejidad de tiempo de la operaci\u00f3n de b\u00fasqueda en un \u00e1rbol B, que es un aspecto importante de este tipo de estructura.",
+            "puntaje": 3.0
+        }
+    },
+    {
+        "estructura": "Desconocido",
+        "pregunta": "La b\u00fasqueda en anchura utiliza una cola para almacenar los nodos a visitar.",
+        "respuesta": "Verdadero",
+        "correctitud": {
+            "razonamiento": "La respuesta es correcta ya que la b\u00fasqueda en anchura efectivamente utiliza una cola para almacenar los nodos a visitar. Este enfoque permite que la b\u00fasqueda se realice de manera sistem\u00e1tica, visitando primero todos los nodos vecinos antes de pasar a los siguientes niveles de vecinos.",
+            "puntaje": 3.0
+        },
+        "claridad": {
+            "razonamiento": "La respuesta es clara y concisa. No hay ambig\u00fcedad en la afirmaci\u00f3n de que la b\u00fasqueda en anchura usa una cola para almacenar nodos.",
+            "puntaje": 3.0
+        },
+        "relevancia": {
+            "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta formulada sobre el uso de una cola en la b\u00fasqueda en anchura.",
+            "puntaje": 3.0
+        }
+    },
+    {
+        "estructura": "Desconocido",
+        "pregunta": "Las tablas hash son m\u00e1s eficientes que los arreglos y las listas enlazadas para buscar elementos en la estructura",
+        "respuesta": "Verdadero",
+        "correctitud": {
+            "razonamiento": "Las tablas hash son estructuras de datos que permiten buscar elementos de manera eficiente en promedio, en comparaci\u00f3n con otras estructuras como arreglos y listas enlazadas. La b\u00fasqueda en una tabla hash se realiza a trav\u00e9s de un proceso de hashing, que mapea la clave del elemento a un \u00edndice en la tabla. Esto permite un acceso directo y r\u00e1pido a la ubicaci\u00f3n del elemento buscado, en lugar de tener que recorrer secuencialmente los elementos como en una lista o arreglo. Sin embargo, la eficiencia de las tablas hash tambi\u00e9n depende de la calidad de la funci\u00f3n de hashing y de la cantidad de colisiones que se produzcan. En general, para un buen dise\u00f1o de la tabla hash y un factor de carga adecuado, las tablas hash pueden ofrecer una b\u00fasqueda eficiente en promedio.",
+            "puntaje": 3.0
+        },
+        "claridad": {
+            "razonamiento": "La respuesta es clara y concisa. Se explica de forma adecuada la eficiencia de las tablas hash en comparaci\u00f3n con los arreglos y las listas enlazadas en t\u00e9rminos de b\u00fasqueda. Adem\u00e1s, se menciona la importancia de la calidad de la funci\u00f3n de hashing y el factor de carga para garantizar la eficiencia de las tablas hash.",
+            "puntaje": 3.0
+        },
+        "relevancia": {
+            "razonamiento": "La respuesta es relevante, ya que aborda directamente la pregunta planteada sobre la eficiencia de las tablas hash en comparaci\u00f3n con los arreglos y las listas enlazadas para la b\u00fasqueda de elementos en la estructura. Se proporciona una explicaci\u00f3n detallada sobre el funcionamiento de las tablas hash y se mencionan los aspectos clave a tener en cuenta para garantizar su eficiencia.",
+            "puntaje": 3.0
+        }
+    },
+    {
+        "estructura": "Desconocido",
+        "pregunta": "La b\u00fasqueda de un elemento en un mont\u00edculo tiene complejidad O(n)",
+        "respuesta": "Verdadero",
+        "correctitud": {
+            "razonamiento": "La respuesta es incorrecta. La complejidad de la b\u00fasqueda en un mont\u00edculo (heap) es O(log n) ya que se realiza a trav\u00e9s de comparaciones y movimientos en el \u00e1rbol binario.",
+            "puntaje": 0.0
+        },
+        "claridad": {
+            "razonamiento": "La respuesta es clara y concisa.",
+            "puntaje": 3.0
+        },
+        "relevancia": {
+            "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta planteada.",
+            "puntaje": 3.0
+        }
+    },
+    {
+        "estructura": "Desconocido",
+        "pregunta": "La b\u00fasqueda en un \u00e1rbol B tiene complejidad temporal O(n), donde n es el n\u00famero de elementos en el \u00e1rbol.",
+        "respuesta": "Verdadero",
+        "correctitud": {
+            "razonamiento": "La respuesta es incorrecta. La b\u00fasqueda en un \u00e1rbol B tiene una complejidad temporal de O(log n), donde n es el n\u00famero de elementos en el \u00e1rbol. Esto se debe a que en cada nivel del \u00e1rbol se reducen las posibilidades a la mitad, lo que da lugar a una b\u00fasqueda eficiente.",
+            "puntaje": 1.0
+        },
+        "claridad": {
+            "razonamiento": "La respuesta es clara y concisa, afirmando la complejidad temporal incorrecta de la b\u00fasqueda en un \u00e1rbol B.",
+            "puntaje": 3.0
+        },
+        "relevancia": {
+            "razonamiento": "La respuesta es relevante ya que aborda la complejidad temporal de la b\u00fasqueda en un \u00e1rbol B, que es un tema importante en la estructura de datos.",
+            "puntaje": 3.0
+        }
+    },
+    {
+        "estructura": "Desconocido",
+        "pregunta": "Considere un conjunto de estudiantes con sus respectivas calificaciones. \u00bfC\u00f3mo podr\u00eda usar una cola de prioridad para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas?",
+        "respuesta": "Se puede utilizar una cola de prioridad implementada como un mont\u00edculo m\u00e1ximo para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas. Al insertar los estudiantes en la cola de prioridad, se debe asignar la calificaci\u00f3n como su prioridad. Luego, se pueden extraer los 5 estudiantes con las prioridades m\u00e1s altas de la cola de prioridad, lo que corresponder\u00edan a las 5 calificaciones m\u00e1s altas.",
+        "correctitud": {
+            "razonamiento": "La respuesta ofrece una estrategia correcta para usar una cola de prioridad para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas.",
+            "puntaje": 3.0
+        },
+        "claridad": {
+            "razonamiento": "La respuesta es clara y proporciona una explicaci\u00f3n concisa de c\u00f3mo utilizar una cola de prioridad para identificar a los estudiantes con las calificaciones m\u00e1s altas.",
+            "puntaje": 3.0
+        },
+        "relevancia": {
+            "razonamiento": "La respuesta es altamente relevante, ya que describe c\u00f3mo utilizar espec\u00edficamente una cola de prioridad para resolver el problema planteado en la pregunta.",
+            "puntaje": 3.0
+        }
+    }
+]

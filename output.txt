@@ -1,0 +1,780 @@
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: Es recomendable usar colas con prioridad cuando todos los elementos tienen la misma prioridad
+        Respuesta Proporcionada: Falso
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:None
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: Es recomendable usar colas con prioridad cuando todos los elementos tienen la misma prioridad
+        Respuesta Proporcionada: Falso
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:None
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: El árbol B/B+ es útil para la implementación de algoritmos de búsqueda en grafos, ya que permite una rápida búsqueda de nodos y aristas
+        Respuesta Proporcionada: Falso
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:None
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: El árbol B/B+ es útil para la implementación de algoritmos de búsqueda en grafos, ya que permite una rápida búsqueda de nodos y aristas
+        Respuesta Proporcionada: Falso
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:None
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: Se puede usar grafos para modelar sistemas de recomendación, como en aplicaciones de comercio electrónico o de películas, ya que los grafos pueden representar las preferencias de los usuarios y las relaciones entre productos o películas
+        Respuesta Proporcionada: Verdadero
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:None
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: Se puede usar grafos para modelar sistemas de recomendación, como en aplicaciones de comercio electrónico o de películas, ya que los grafos pueden representar las preferencias de los usuarios y las relaciones entre productos o películas
+        Respuesta Proporcionada: Verdadero
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:None
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: Al igual que un montículo, un árbol AVL también se podría implementar usando un arreglo.
+        Respuesta Proporcionada: Verdadero
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:None
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: Al igual que un montículo, un árbol AVL también se podría implementar usando un arreglo.
+        Respuesta Proporcionada: Verdadero
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:None
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: En un árbol B, la operación de búsqueda tiene una complejidad de tiempo constante, independientemente del número de elementos almacenados en el árbol
+        Respuesta Proporcionada: Falso
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:None
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: En un árbol B, la operación de búsqueda tiene una complejidad de tiempo constante, independientemente del número de elementos almacenados en el árbol
+        Respuesta Proporcionada: Falso
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:None
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: Es recomendable usar colas con prioridad cuando todos los elementos tienen la misma prioridad
+        Respuesta Proporcionada: Falso
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:{
+  "estructura": "Desconocido",
+  "pregunta": "Es recomendable usar colas con prioridad cuando todos los elementos tienen la misma prioridad",
+  "respuesta": "Falso",
+  "correctitud": {
+    "razonamiento": "La respuesta es correcta. Las colas con prioridad se utilizan para asignar diferentes prioridades a los elementos y se ordenan según estas prioridades. Si todos los elementos tienen la misma prioridad, no habría necesidad de utilizar una cola con prioridad.",
+    "puntaje": 3
+  },
+  "claridad": {
+    "razonamiento": "La respuesta es clara y concisa. Explica claramente que no es recomendable usar colas con prioridad cuando todos los elementos tienen la misma prioridad.",
+    "puntaje": 3
+  },
+  "relevancia": {
+    "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta realizada y proporciona una explicación adecuada.",
+    "puntaje": 3
+  }
+}
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: Es recomendable usar colas con prioridad cuando todos los elementos tienen la misma prioridad
+        Respuesta Proporcionada: Falso
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:{
+  "estructura": "Desconocido",
+  "pregunta": "Es recomendable usar colas con prioridad cuando todos los elementos tienen la misma prioridad",
+  "respuesta": "Falso",
+  "correctitud": {
+    "razonamiento": "La respuesta es correcta. No es recomendable usar colas con prioridad cuando todos los elementos tienen la misma prioridad, ya que en ese caso no se requiere ninguna clasificación de prioridades. Las colas con prioridad son útiles cuando se necesita dar diferentes niveles de importancia a los elementos y se requiere un ordenamiento basado en esas prioridades.",
+    "puntaje": 3
+  },
+  "claridad": {
+    "razonamiento": "La respuesta es clara y concisa. Explica de manera precisa por qué no es recomendable usar colas con prioridad cuando todos los elementos tienen la misma prioridad.",
+    "puntaje": 3
+  },
+  "relevancia": {
+    "razonamiento": "La respuesta es relevante, ya que aborda directamente la pregunta planteada y proporciona una explicación adecuada.",
+    "puntaje": 3
+  }
+}
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: El árbol B/B+ es útil para la implementación de algoritmos de búsqueda en grafos, ya que permite una rápida búsqueda de nodos y aristas
+        Respuesta Proporcionada: Falso
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:{
+  "estructura": "Desconocido",
+  "pregunta": "El árbol B/B+ es útil para la implementación de algoritmos de búsqueda en grafos, ya que permite una rápida búsqueda de nodos y aristas",
+  "respuesta": "Falso",
+  "correctitud": {
+    "razonamiento": "La respuesta es correcta porque el árbol B/B+ no está diseñado específicamente para la búsqueda en grafos, sino para la organización eficiente de datos en un índice o una base de datos.",
+    "puntaje": 3
+  },
+  "claridad": {
+    "razonamiento": "La respuesta es clara y concisa, indicando claramente que es falsa la afirmación",
+    "puntaje": 3
+  },
+  "relevancia": {
+    "razonamiento": "La respuesta es relevante ya que responde directamente a la pregunta y proporciona información precisa sobre el árbol B/B+",
+    "puntaje": 3
+  }
+}
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: El árbol B/B+ es útil para la implementación de algoritmos de búsqueda en grafos, ya que permite una rápida búsqueda de nodos y aristas
+        Respuesta Proporcionada: Falso
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:{
+    "estructura": "Desconocido",
+    "pregunta": "El árbol B/B+ es útil para la implementación de algoritmos de búsqueda en grafos, ya que permite una rápida búsqueda de nodos y aristas",
+    "respuesta": "Falso",
+    "correctitud": {
+        "razonamiento": "La respuesta es correcta",
+        "puntaje": 3
+    },
+    "claridad": {
+        "razonamiento": "La respuesta es clara y concisa",
+        "puntaje": 3
+    },
+    "relevancia": {
+        "razonamiento": "La respuesta es relevante ya que el árbol B/B+ no se utiliza para la búsqueda de nodos y aristas en grafos",
+        "puntaje": 3
+    }
+}
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: Se puede usar grafos para modelar sistemas de recomendación, como en aplicaciones de comercio electrónico o de películas, ya que los grafos pueden representar las preferencias de los usuarios y las relaciones entre productos o películas
+        Respuesta Proporcionada: Verdadero
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:{
+  "estructura": "Desconocido",
+  "pregunta": "Se puede usar grafos para modelar sistemas de recomendación, como en aplicaciones de comercio electrónico o de películas, ya que los grafos pueden representar las preferencias de los usuarios y las relaciones entre productos o películas",
+  "respuesta": "Verdadero",
+  "correctitud": {
+    "razonamiento": "Es correcto. Los grafos son una estructura de datos flexible que puede representar relaciones entre elementos, como las preferencias de los usuarios y las relaciones entre productos o películas en un sistema de recomendación.",
+    "puntaje": 3
+  },
+  "claridad": {
+    "razonamiento": "La respuesta es clara y concisa, afirmando que es posible usar grafos para modelar sistemas de recomendación.",
+    "puntaje": 3
+  },
+  "relevancia": {
+    "razonamiento": "La respuesta es relevante ya que responde directamente a la pregunta planteada y proporciona información útil sobre el uso de grafos en sistemas de recomendación.",
+    "puntaje": 3
+  }
+}
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: Se puede usar grafos para modelar sistemas de recomendación, como en aplicaciones de comercio electrónico o de películas, ya que los grafos pueden representar las preferencias de los usuarios y las relaciones entre productos o películas
+        Respuesta Proporcionada: Verdadero
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:{
+  "estructura": "Desconocido",
+  "pregunta": "Se puede usar grafos para modelar sistemas de recomendación, como en aplicaciones de comercio electrónico o de películas, ya que los grafos pueden representar las preferencias de los usuarios y las relaciones entre productos o películas",
+  "respuesta": "Verdadero",
+  "correctitud": {
+    "razonamiento": "La afirmación es correcta ya que los grafos pueden representar las preferencias de los usuarios y las relaciones entre productos o películas en un sistema de recomendación.",
+    "puntaje": 3
+  },
+  "claridad": {
+    "razonamiento": "La respuesta es clara y concisa, afirmando de manera directa que es verdadero.",
+    "puntaje": 3
+  },
+  "relevancia": {
+    "razonamiento": "La respuesta es relevante y se relaciona directamente con la pregunta planteada.",
+    "puntaje": 3
+  }
+}
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: La búsqueda de un elemento en un montículo tiene complejidad O(n)
+        Respuesta Proporcionada: Verdadero
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:La respuesta proporcionada es incorrecta. La búsqueda de un elemento en un montículo tiene una complejidad de O(log n), no O(n). Esto se debe a que un montículo es una estructura de datos de árbol binario completo en la que el nodo padre siempre es mayor o menor que sus hijos. En una búsqueda, se compara el elemento buscado con los nodos del montículo de manera secuencial y se va descartando la mitad del árbol en cada comparación, por lo que la complejidad es O(log n). 
+
+Puntaje asignado:
+- Razonamiento sobre la Correctitud de la Respuesta: 2
+- Razonamiento sobre la Claridad de la Respuesta: 2
+- Razonamiento sobre la Relevancia de la Respuesta: 2
+
+###Human:
+        Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
+        Las respuestas serán teóricas y breves.
+
+        La pregunta a evaluar trata sobre la estructura Desconocido
+        Información de la Estructura: Desconocido
+
+        Pregunta: Dado un laberinto representado como una matriz de celdas, describe un algoritmo que encuentre un camino desde la entrada hasta la salida utilizando una pila.
+        Respuesta Proporcionada: 1. Se creara una pila que almacenara cada posición que se puede avanzar en un camino determinado, además de un contador para saber cuantos movimientos hizo.
+2. Si este camino no conduce a la salida, se le hará pop a los últimos elementos de la pila hasta volver a una casilla que permita mas de un movimiento (para cambiar de camino).
+3. Si logra llegar hasta la salida, se guardara toda esta pila en dentro de otra estructura arbitraria(arreglo, lista, etc.) 
+4. Luego se volverá a empezar otro recorrido en la matriz desde la ultima posición en la que la pila tuvo la opción de hacer mas de un movimiento, pero esta vez tomando otro camino, si no llega a una salida, se le hará pop hasta otra posición de múltiple opción(para no repetirse) y seguira intentando.
+5. Todos los intentos se comparan al final.
+
+        Criterios de evaluación: Desconocido
+
+        Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
+
+        Por favor, sigue los siguientes pasos para evaluar la respuesta según los criterios de evaluación:
+        1. Analiza la estructura y la información proporcionada.
+        2. Revisa la pregunta y la respuesta proporcionada.
+        3. Razone sobre la adecuación de la respuesta a la pregunta, considerando los criterios específicos para la estructura en cuestión.
+            - Razonamiento sobre la Correctitud de la Respuesta
+            - Razonamiento sobre la Claridad de la Respuesta
+            - Razonamiento sobre la Relevancia de la Respuesta
+        4. Rellena el archivo JSON de evaluación adjunto, incluyendo tus razonamientos y el puntaje asignado en cada criterio.
+        5. Devuelve el archivo JSON completado.
+
+        Formato del JSON:
+        The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"$defs": {"EvaluationCriteria": {"properties": {"razonamiento": {"description": "Razonamiento sobre el criterio", "title": "Razonamiento", "type": "string"}, "puntaje": {"description": "Puntaje asignado", "title": "Puntaje", "type": "number"}}, "required": ["razonamiento", "puntaje"], "title": "EvaluationCriteria", "type": "object"}}, "properties": {"estructura": {"title": "Estructura", "type": "string"}, "pregunta": {"title": "Pregunta", "type": "string"}, "respuesta": {"title": "Respuesta", "type": "string"}, "correctitud": {"$ref": "#/$defs/EvaluationCriteria"}, "claridad": {"$ref": "#/$defs/EvaluationCriteria"}, "relevancia": {"$ref": "#/$defs/EvaluationCriteria"}}, "required": ["estructura", "pregunta", "respuesta", "correctitud", "claridad", "relevancia"]}
+```
+        
+###Assistant:{
+  "estructura": "Desconocido",
+  "pregunta": "Dado un laberinto representado como una matriz de celdas, describe un algoritmo que encuentre un camino desde la entrada hasta la salida utilizando una pila.",
+  "respuesta": "1. Se creara una pila que almacenara cada posición que se puede avanzar en un camino determinado, además de un contador para saber cuantos movimientos hizo.\n2. Si este camino no conduce a la salida, se le hará pop a los últimos elementos de la pila hasta volver a una casilla que permita mas de un movimiento (para cambiar de camino).\n3. Si logra llegar hasta la salida, se guardara toda esta pila en dentro de otra estructura arbitraria(arreglo, lista, etc.) \n4. Luego se volverá a empezar otro recorrido en la matriz desde la ultima posición en la que la pila tuvo la opción de hacer mas de un movimiento, pero esta vez tomando otro camino, si no llega a una salida, se le hará pop hasta otra posición de múltiple opción(para no repetirse) y seguira intentando.\n5. Todos los intentos se comparan al final.",
+  "correctitud": {
+    "razonamiento": "El algoritmo propuesto parece ser correcto en términos de encontrar un camino desde la entrada hasta la salida del laberinto utilizando una pila. Se utiliza una pila para almacenar la posición actual y el contador de movimientos. Se explora el laberinto avanzando en una dirección hasta llegar a un callejón sin salida, momento en el cual se retrocede a una posición anterior y se intenta en otra dirección. Si se encuentra una salida, se guarda el camino en una estructura auxiliar. Luego, se continúa explorando desde la última posición con múltiples direcciones posibles. Todos los intentos se comparan al final. Este enfoque parece cumplir con el objetivo de encontrar un camino desde la entrada hasta la salida utilizando una pila.",
+    "puntaje": 3
+  },
+  "claridad": {
+    "razonamiento": "La respuesta proporciona una descripción de los pasos y acciones en el algoritmo de manera clara y fácil de seguir. Se explic
+
