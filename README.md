@@ -30,19 +30,61 @@ python main.py
 
 Asegúrate de tener todos los archivos de entrada necesarios y de seguir las instrucciones en la consola.
 
-## Pruebas
+# Análisis del archivo `main.py`
 
-Para ejecutar las pruebas unitarias, navega a la carpeta `tests/` y ejecuta:
+## Descripción General
 
-```bash
-python test_<nombre_del_archivo>.py
-```
+El archivo `main.py` sirve como punto de entrada y coordinación del programa. Contiene una serie de funciones que facilitan el procesamiento, evaluación y presentación de los datos de los estudiantes.
 
-Por ejemplo, para ejecutar las pruebas de `json_utils`, usarías:
+## Funciones Principales
 
-```bash
-python test_json_utils.py
-```
+Dentro de este archivo, encontramos las siguientes funciones clave:
+
+- **`load_json_data()`**: 
+    - **Descripción**: Carga y estructura los datos de los estudiantes desde un archivo JSON.
+    - **Salida**: DataFrame estructurado con los datos de los estudiantes.
+
+- **`load_questions_from_excel(filepath)`**: 
+    - **Descripción**: Importa las preguntas desde un archivo Excel.
+    - **Parámetros**: Ruta del archivo Excel.
+    - **Salida**: Lista con la información detallada de cada pregunta.
+
+- **`generate_prompts_from_dataframe(df, questions, format_instructions)`**: 
+    - **Descripción**: Crea prompts para la evaluación basados en el DataFrame de estudiantes y las preguntas.
+    - **Parámetros**: DataFrame de estudiantes, preguntas, instrucciones de formato.
+    - **Salida**: Lista de prompts generados.
+
+- **`generate_responses_recursiva(prompts, responses=None, parsed_evaluations=None)`**: 
+    - **Descripción**: Utiliza GPT-4 para generar respuestas a partir de los prompts.
+    - **Parámetros**: Lista de prompts, respuestas previas (opcional), evaluaciones parseadas previamente (opcional).
+    - **Salida**: Respuestas generadas y sus respectivas evaluaciones parseadas.
+
+- **`init()`**: 
+    - **Descripción**: Inicializa la conexión con OpenAI.
+
+- **`load_data()`**: 
+    - **Descripción**: Función de alto nivel que coordina la carga de datos de estudiantes y preguntas.
+    - **Salida**: DataFrame de estudiantes y lista de preguntas.
+
+- **`generate_and_process(df, questions)`**: 
+    - **Descripción**: Coordina la generación de prompts y obtiene las respuestas.
+    - **Parámetros**: DataFrame de estudiantes, preguntas.
+    - **Salida**: Respuestas generadas y evaluaciones parseadas.
+
+- **`save_data(responses, parsed_responses)`**: 
+    - **Descripción**: Guarda las respuestas y evaluaciones en archivos.
+    - **Parámetros**: Respuestas y evaluaciones parseadas.
+
+- **`load_previous_data()`**: 
+    - **Descripción**: Carga datos previamente guardados si existen.
+    - **Salida**: Respuestas y evaluaciones parseadas previamente guardadas.
+
+- **`display_results(responses)`**: 
+    - **Descripción**: Visualiza las respuestas generadas.
+    - **Parámetros**: Respuestas generadas.
+
+- **`main()`**: 
+    - **Descripción**: Función principal que coordina todas las operaciones, desde la carga de datos hasta la visualización de resultados.
 
 ## Contribuciones
 

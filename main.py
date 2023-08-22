@@ -59,10 +59,6 @@ def load_questions_from_excel(filepath):
 
 
 
-
-
-
-
 def generate_prompts_from_dataframe(df, questions, format_instructions):
     """ """
     question_dict = {question.question: question for question in questions}
@@ -102,7 +98,6 @@ def generate_prompts_from_dataframe(df, questions, format_instructions):
         prompts.append(prompt)
 
     return prompts
-
 
 
 
