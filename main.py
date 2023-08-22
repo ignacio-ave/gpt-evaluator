@@ -15,15 +15,18 @@ from utils.openai_utils import init_openai
 def load_json_data():
     """ Carga archivo json con las respuestas y preguntas """
     file_path = input("Por favor, ingresa la ruta completa del archivo JSON (incluyendo el nombre del archivo): ")
+    
     with open(file_path, "r") as file:
         data = json.load(file)
     
     students_data = data[0]
     all_students_data_adjusted = extract_from_json_adjusted(students_data)
     max_columns = max(len(student) for student in all_students_data_adjusted)
+    
     for student in all_students_data_adjusted:
         while len(student) < max_columns:
             student.append(Nsone)
+    
     num_questions = (max_columns - 6) // 2
     adjusted_columns = ["Nombre", "Email", "Estado", "Inicio", "Fin", "Tiempo"] + [f"Q{i//2+1}" if i % 2 == 0 else f"A{i//2+1}" for i in range(num_questions * 2)]
     df_all_students_final_adjusted = pd.DataFrame(all_students_data_adjusted, columns=adjusted_columns)
@@ -42,6 +45,7 @@ def load_questions_from_excel(filepath):
     """ Carga la pauta """
     pauta_df = pd.read_excel(filepath)
     questions = []
+    
     for index, row in pauta_df.iterrows():
         question_id_hash = hashlib.sha256(row["Pregunta"].encode()).hexdigest()
         
@@ -63,9 +67,16 @@ def load_questions_from_excel(filepath):
 
 def generate_prompts_from_dataframe(df, questions, format_instructions):
     """ Genera prompts con la informacion relacionada a la pregunta"""
+    IGNORED_RESPONSES = ["Falso", "Verdadero", "-"]
+    
     question_dict = {question.question: question for question in questions}
     prompts = []
+    
     for (student, question_text), row in df.iterrows():
+        
+        if row['Respuesta'] in IGNORED_RESPONSES:
+            continue
+
         question = question_dict.get(question_text, {})
         topic = getattr(question, 'topic', "Desconocido")
         scoring_guideline = getattr(question, 'scoring_guideline', "Desconocido")
@@ -109,13 +120,12 @@ def generate_responses_recursiva(prompts, responses=None, parsed_evaluations=Non
     max_tokens = settings.get("max_tokens", 500)
     max_attempts = settings.get("max_attempts", 3)
 
-
     pydantic_parser = PydanticOutputParser(pydantic_object=EvaluationJSON)
     format_instructions = pydantic_parser.get_format_instructions()
     
-
     if responses is None:
         responses = []
+    
     if parsed_evaluations is None:
         parsed_evaluations = []
 
@@ -123,6 +133,7 @@ def generate_responses_recursiva(prompts, responses=None, parsed_evaluations=Non
     print(f"Total de prompts a procesar: {total_prompts}")
 
     processed_prompts = get_processed_prompts_count()
+    
     if processed_prompts > 0:
         user_input = input(f"Ya has procesado {processed_prompts} prompts anteriormente. ¿Quieres continuar desde donde lo dejaste? (s/n): ").strip().lower()
         if user_input != 's':
@@ -131,6 +142,7 @@ def generate_responses_recursiva(prompts, responses=None, parsed_evaluations=Non
     n_prompts = int(input(f"¿Cuántos prompts quieres procesar? (Máximo {total_prompts - processed_prompts}): "))
 
     with open("output.txt", "a") as f:
+        
         for i, prompt in enumerate(prompts[processed_prompts:processed_prompts + n_prompts]):
             messages = [{'role': 'system', 'content': prompt}]
 
@@ -184,6 +196,7 @@ def load_questions_from_excel(filepath):
     """Carga las preguntas de un archivo excel y las retorna como una lista de QuestionInfo"""
     pauta_df = pd.read_excel(filepath)
     questions = []
+    
     for index, row in pauta_df.iterrows():
         question_info = QuestionInfo(
             question_id=row["ID"],
