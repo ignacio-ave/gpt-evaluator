@@ -30,6 +30,7 @@ python main.py
 
 Asegúrate de tener todos los archivos de entrada necesarios y de seguir las instrucciones en la consola.
 
+<<<<<<< HEAD
 # Análisis del archivo `main.py`
 
 ## Descripción General
@@ -86,6 +87,8 @@ Dentro de este archivo, encontramos las siguientes funciones clave:
 - **`main()`**: 
     - **Descripción**: Función principal que coordina todas las operaciones, desde la carga de datos hasta la visualización de resultados.
 
+=======
+>>>>>>> a988970d1bd5aa87b9e618db1e0f8437a9fb3b72
 ## Contribuciones
 
 Si deseas contribuir al proyecto, asegúrate de escribir pruebas para cualquier nueva función o método y de seguir las convenciones de código existentes.
