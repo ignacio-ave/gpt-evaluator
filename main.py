@@ -2,12 +2,14 @@ import json
 import hashlib
 import pandas as pd
 import openai
+import os
+from langchain.output_parsers import PydanticOutputParser
+
 from models.evaluation import EvaluationJSON, QuestionInfo
 from utils.dataframe_utils import reorganize_dataframe
 from utils.file_utils import get_processed_prompts_count, save_processed_prompts_count
 from utils.json_utils import extract_from_json_adjusted
 from utils.openai_utils import init_openai
-from langchain.output_parsers import PydanticOutputParser
 
 
 def load_json_data():
