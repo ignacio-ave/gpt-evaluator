@@ -5,11 +5,13 @@ import openai
 import os
 from langchain.output_parsers import PydanticOutputParser
 
-from models.evaluation import EvaluationJSON, QuestionInfo
+from utils.file_utils import save_to_file, load_from_file, get_processed_prompts_count, save_processed_prompts_count
 from utils.dataframe_utils import reorganize_dataframe
-from utils.file_utils import get_processed_prompts_count, save_processed_prompts_count
 from utils.json_utils import extract_from_json_adjusted
 from utils.openai_utils import init_openai
+from utils.settings_utils import ensure_settings_exists, load_settings, save_settings
+from models.evaluation import EvaluationJSON, QuestionInfo
+
 
 
 def load_json_data():
@@ -212,59 +214,6 @@ def load_questions_from_excel(filepath):
         questions.append(question_info)
     return questions
 
-def ensure_settings_exists():
-    """Asegura que exista un archivo settings.json. Si no existe, lo crea solicitando los parámetros al usuario."""
-    
-    if not os.path.exists("settings.json"):
-        print("Archivo settings.json no encontrado. Vamos a crear uno.")
-        
-        openai_token = input("Por favor, ingresa tu token de OpenAI: ").strip()
-        max_tokens = input("Por favor, ingresa el número máximo de tokens (sugerencia: 500): ").strip() or "500"
-        max_attempts = input("Por favor, ingresa el número máximo de intentos (sugerencia: 3): ").strip() or "3"
-        data_folder_path = input("Por favor, ingresa la ruta de la carpeta de datos: ").strip()
-        
-        settings = {
-            "openai_token": openai_token,
-            "max_tokens": int(max_tokens),
-            "max_attempts": int(max_attempts),
-            "data_folder_path": data_folder_path
-        }
-        
-        save_settings(settings)
-
-        print("Archivo settings.json creado exitosamente.")
-    else:
-        print("Archivo settings.json encontrado.")
-
-def load_settings():
-    """Carga configuraciones desde settings.json"""
-    with open('settings.json', 'r') as file:
-        return json.load(file)
-
-def save_settings(settings):
-    """Guarda configuraciones en settings.json"""
-    with open('settings.json', 'w') as file:
-        json.dump(settings, file, indent=4)
-
-def save_to_file(data, filename):
-    """Guarda datos en un archivo JSON en la carpeta 'data_created'."""
-    
-    filepath = filename
-    
-    with open(filepath, 'w') as file:
-        if isinstance(data, list):
-            data = [item.to_dict() if hasattr(item, "to_dict") else item for item in data]
-        elif hasattr(data, "to_dict"):
-            data = data.to_dict()
-        
-        json.dump(data, file, indent=4)
-
-
-
-def load_from_file(filename):
-    """Carga datos desde un archivo JSON"""
-    with open(filename, 'r') as file:
-        return json.load(file)
 
 def init():
     """Inicialización: carga configuraciones y inicializa OpenAI"""
