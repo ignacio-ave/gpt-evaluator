@@ -11,7 +11,7 @@ from langchain.output_parsers import PydanticOutputParser
 
 
 def load_json_data():
-    """ """
+    """ Carga archivo json con las respuestas y preguntas """
     file_path = input("Por favor, ingresa la ruta completa del archivo JSON (incluyendo el nombre del archivo): ")
     with open(file_path, "r") as file:
         data = json.load(file)
@@ -37,7 +37,7 @@ def load_json_data():
 
 
 def load_questions_from_excel(filepath):
-    """ """
+    """ Carga la pauta """
     pauta_df = pd.read_excel(filepath)
     questions = []
     for index, row in pauta_df.iterrows():
@@ -60,7 +60,7 @@ def load_questions_from_excel(filepath):
 
 
 def generate_prompts_from_dataframe(df, questions, format_instructions):
-    """ """
+    """ Genera prompts con la informacion relacionada a la pregunta"""
     question_dict = {question.question: question for question in questions}
     prompts = []
     for (student, question_text), row in df.iterrows():
@@ -209,14 +209,18 @@ def save_settings(settings):
         json.dump(settings, file, indent=4)
 
 def save_to_file(data, filename):
-    """Guarda datos en un archivo JSON"""
-    with open(filename, 'w') as file:
+    """Guarda datos en un archivo JSON en la carpeta 'data_created'."""
+    
+    filepath = filename
+    
+    with open(filepath, 'w') as file:
         if isinstance(data, list):
             data = [item.to_dict() if hasattr(item, "to_dict") else item for item in data]
         elif hasattr(data, "to_dict"):
             data = data.to_dict()
-            
+        
         json.dump(data, file, indent=4)
+
 
 
 def load_from_file(filename):
