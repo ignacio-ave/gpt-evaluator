@@ -2,6 +2,7 @@ import json
 import hashlib
 import pandas as pd
 import openai
+import openpyxl
 import os
 from langchain.output_parsers import PydanticOutputParser
 
@@ -83,6 +84,9 @@ def generate_prompts_from_dataframe(df, questions, format_instructions):
         topic = getattr(question, 'topic', "Desconocido")
         scoring_guideline = getattr(question, 'scoring_guideline', "Desconocido")
         criteria = getattr(question, 'criteria', "Desconocido")
+        good_response = question.get('good_response', "No proporcionada")
+        bad_response = question.get('bad_response', "No proporcionada")
+
         prompt = f'''
         Actúa como un evaluador universitario de la materia ESTRUCTURA DE DATOS. En esta materia se evalúa el conocimiento de los estudiantes del departamento de informática en estructura de datos bien conocida.
         Las respuestas serán teóricas y breves.
@@ -93,7 +97,8 @@ def generate_prompts_from_dataframe(df, questions, format_instructions):
         Pregunta: {question_text}
         Respuesta Proporcionada: {row['Respuesta']}
 
-        Criterios de evaluación: {criteria}
+        Respuesta a evaluar con 3 puntos : {good_response}
+        Respuesta a evaluar con 0 puntos : {bad_response}
 
         Evalua asignando un puntaje de 0 a 3 en cada criterio de evaluación. 0 es la peor calificación y 3 es la mejor calificación.
 
@@ -110,14 +115,16 @@ def generate_prompts_from_dataframe(df, questions, format_instructions):
         Formato del JSON:
         {format_instructions}
         '''
-        prompts.append(prompt)
+        prompts.append({"student": student, "prompt": prompt})
 
     return prompts
 
 
+unprocessed_prompts_dict = {}
 
 def generate_responses_recursiva(prompts, responses=None, parsed_evaluations=None):
     """Genera respuestas a partir de una lista de prompts con reintentos ."""
+    global unprocessed_prompts_dict
     settings = load_settings()
     max_tokens = settings.get("max_tokens", 500)
     max_attempts = settings.get("max_attempts", 3)
@@ -146,7 +153,9 @@ def generate_responses_recursiva(prompts, responses=None, parsed_evaluations=Non
     with open("output.txt", "a") as f:
         
         for i, prompt in enumerate(prompts[processed_prompts:processed_prompts + n_prompts]):
-            messages = [{'role': 'system', 'content': prompt}]
+            student = prompt["student"]
+            prompt_content = prompt["prompt"]
+            messages = [{'role': 'system', 'content': prompt_content}]
 
             response_content = None
 
@@ -169,6 +178,7 @@ def generate_responses_recursiva(prompts, responses=None, parsed_evaluations=Non
                 except Exception as e:  # Esto manejará tanto errores de la API como errores de parseo
                     if attempt == max_attempts - 1:
                         print(f"Error en el intento {attempt+1} para el prompt {i+1}: {e}")
+                        unprocessed_prompts_dict[student] = prompt_content
                         responses.append(None)
                         break
 
@@ -190,6 +200,17 @@ def generate_responses_recursiva(prompts, responses=None, parsed_evaluations=Non
             generate_responses_recursiva(prompts[processed_prompts + n_prompts:], responses, parsed_evaluations)
 
 
+
+    # Si es que existen prompts que no se pudieron procesar
+    if unprocessed_prompts_dict:
+        save_to_file(unprocessed_prompts_dict, "unprocessed_prompts.json")
+        unprocessed_count = len(unprocessed_prompts_dict)
+        print(f"\nQuedan {unprocessed_count} prompts sin procesar.")
+        user_input = input(f"¿Deseas procesar nuevamente los prompts no procesados? (s/n): ").strip().lower()
+        if user_input == 's':
+            max_attempts = int(input("Por favor, indica el número de intentos que deseas realizar: "))
+            unprocessed_prompts = [{"student": k, "prompt": v} for k, v in unprocessed_prompts_dict.items()]
+            generate_responses_recursiva(unprocessed_prompts)
 
     return responses, parsed_evaluations
 
@@ -223,7 +244,7 @@ def load_data():
     """Cargar datos de estudiantes y preguntas."""
     df = load_json_data()
     df = reorganize_dataframe(df)
-    questions_filepath = input("Ingrese el nombre del archivo 'pauta.xlsx' y su ruta: ")
+    questions_filepath = input("Por favor, ingrese el nombre del archivo 'pauta.xlsx' y su ruta: ")
     questions = load_questions_from_excel(questions_filepath)
     return df, questions
 

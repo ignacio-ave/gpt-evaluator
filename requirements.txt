@@ -2,3 +2,4 @@ pandas
 openai
 pydantic
 langchain
+openpyxl
