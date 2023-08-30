@@ -7,13 +7,24 @@ import os
 import openai
 from langchain.output_parsers import PydanticOutputParser
 
-from utils.file_utils import save_to_file, load_from_file, get_processed_prompts_count, save_processed_prompts_count
+from utils.file_utils import save_to_file, load_from_file, get_processed_prompts_count, save_processed_prompts_count, improved_save_to_file
 from utils.dataframe_utils import reorganize_dataframe
 from utils.json_utils import extract_from_json_adjusted
 from utils.openai_utils import init_openai
 from utils.settings_utils import ensure_settings_exists, load_settings, save_settings
 from models.evaluation import EvaluationJSON, QuestionInfo
 
+def save_processed_prompts(prompts):
+    with open("processed_prompts.json", "w") as file:
+        json.dump(prompts, file)
+
+def load_processed_prompts():
+    try:
+        with open("processed_prompts.json", "r") as file:
+            return json.load(file)
+    except:
+        return []
+            
 
 def load_json_data():
     """ Carga archivo json con las respuestas y preguntas e incluye IDs únicos """
@@ -115,7 +126,7 @@ def save_responses_to_excel(df, responses, parsed_evaluations):
 
 def generate_prompts_from_dataframe(df, questions, format_instructions):
     """ Genera prompts con la informacion relacionada a la pregunta"""
-    IGNORED_RESPONSES = ["Falso", "Verdadero", "-"]
+    IGNORED_RESPONSES = ["Falso", "Verdadero", "-", "No proporcionada"]
     
     question_dict = {question.question: question for question in questions}
     prompts = []
@@ -167,7 +178,8 @@ def generate_prompts_from_dataframe(df, questions, format_instructions):
 
 unprocessed_prompts_dict = {}
 
-def generate_responses_recursiva(df, prompts, responses=None, parsed_evaluations=None):
+
+def generate_responses(df, prompts, responses=None, parsed_evaluations=None):
     """Genera respuestas a partir de una lista de prompts con reintentos y guarda los IDs únicos."""
     global unprocessed_prompts_dict
     settings = load_settings()
@@ -175,7 +187,6 @@ def generate_responses_recursiva(df, prompts, responses=None, parsed_evaluations
     max_attempts = settings.get("max_attempts", 3)
 
     pydantic_parser = PydanticOutputParser(pydantic_object=EvaluationJSON)
-    format_instructions = pydantic_parser.get_format_instructions()
     
     if responses is None:
         responses = []
@@ -186,92 +197,56 @@ def generate_responses_recursiva(df, prompts, responses=None, parsed_evaluations
     total_prompts = len(prompts)
     print(f"Total de prompts a procesar: {total_prompts}")
 
-    processed_prompts = get_processed_prompts_count()
-    
-    if processed_prompts > 0:
-        user_input = input(f"Ya has procesado {processed_prompts} prompts anteriormente. ¿Quieres continuar desde donde lo dejaste? (s/n): ").strip().lower()
-        if user_input != 's':
-            processed_prompts = 0  # Restablecer el conteo si el usuario no quiere continuar
-    
+    already_processed_prompts = load_processed_prompts()
 
-    n_prompts = int(input(f"¿Cuántos prompts quieres procesar? (Máximo {total_prompts - processed_prompts}): "))
+    for i, prompt in enumerate(prompts):
+        student_id = prompt["student"]
+        if student_id in already_processed_prompts:
+            continue
 
-    if (processed_prompts + n_prompts) == total_prompts:
-        save_responses_to_excel(df, responses, parsed_evaluations)
-        print("Todos los prompts han sido procesados y las respuestas han sido guardadas en Excel.")
-        return responses, parsed_evaluations
+        prompt_content = prompt["prompt"]
+        messages = [{'role': 'system', 'content': prompt_content}]
+        response_content = None
 
+        for attempt in range(max_attempts):
+            try:
+                response = openai.ChatCompletion.create(
+                    model="gpt-3.5-turbo",
+                    messages=messages,
+                    max_tokens=max_tokens
+                )
+                response_content = response.choices[0].message['content']
+                response_content_with_id = {
+                    "student_id": student_id,
+                    "response": response_content
+                }
+                responses.append(response_content_with_id)
 
-    with open("output.txt", "a") as f:
-        
-        for i, prompt in enumerate(prompts[processed_prompts:processed_prompts + n_prompts]):
-            student_id = prompt["student"]
-            prompt_content = prompt["prompt"]
-            messages = [{'role': 'system', 'content': prompt_content}]
+                eval_parsed = pydantic_parser.parse(response_content)
+                eval_parsed_with_id = {
+                    "student_id": student_id,
+                    "evaluation": eval_parsed.to_dict()
+                }
+                parsed_evaluations.append(eval_parsed_with_id)
+                already_processed_prompts.append(student_id)
+                save_processed_prompts(already_processed_prompts)
+                break
 
-            response_content = None
+            except Exception as e: 
+                if attempt == max_attempts - 1:
+                    print(f"Error en el intento {attempt+1} para el prompt {i+1}: {e}")
+                    unprocessed_prompts_dict[student_id] = prompt_content
+                    responses.append(None)
+                    break
 
-            # Intentar obtener una respuesta que se pueda parsear
-            for attempt in range(max_attempts):
-                try:
-                    response = openai.ChatCompletion.create(
-                        model="gpt-3.5-turbo",
-                        messages=messages,
-                        max_tokens=max_tokens
-                    )
-                    response_content = response.choices[0].message['content']
-                    # Añadir ID
-                    response_content_with_id = {
-                        "student_id": student_id,
-                        "response": response_content
-                    }
-                    responses.append(response_content_with_id)
-
-                    # Intentar parsear la respuesta
-                    eval_parsed = pydantic_parser.parse(response_content)
-                    # Añadir ID
-                    eval_parsed_with_id = {
-                        "student_id": student_id,
-                        "evaluation": eval_parsed
-                    }
-                    parsed_evaluations.append(eval_parsed_with_id)
-                    break  # Si se parsea correctamente, salimos del bucle de intentos
-
-                except Exception as e:  # Esto manejará tanto errores de la API como errores de parseo
-                    if attempt == max_attempts - 1:
-                        print(f"Error en el intento {attempt+1} para el prompt {i+1}: {e}")
-                        unprocessed_prompts_dict[student_id] = prompt_content
-                        responses.append(None)
-                        break
-
-                # Escribir en el archivo solo si se parsea correctamente
+            with open("output.txt", "a") as f:
                 f.write(f"###Human:{prompt}\n###Assistant:{response_content}\n\n")
 
-            # Imprimir la respuesta
-            if response_content:
-                print(f"Response {i+1}:\n{response_content}\n{'-'*50}")
-                save_processed_prompts_count(processed_prompts + i + 1)
-                print(f"Prompt {processed_prompts + i + 1}/{total_prompts} procesado correctamente.")
-
-        # Preguntar al usuario si desea continuar
-        user_input = input(f"Procesados {processed_prompts + n_prompts}/{total_prompts}. ¿Quieres llamar nuevamente a la función? (s/n): ").strip().lower()
-        if user_input == 's':
-            generate_responses_recursiva(df,prompts[processed_prompts + n_prompts:], responses, parsed_evaluations)
-
-    # Si es que existen prompts que no se pudieron procesar
-    if unprocessed_prompts_dict:
-        save_to_file(unprocessed_prompts_dict, "unprocessed_prompts.json")
-        unprocessed_count = len(unprocessed_prompts_dict)
-        print(f"\nQuedan {unprocessed_count} prompts sin procesar.")
-        user_input = input(f"¿Deseas procesar nuevamente los prompts no procesados? (s/n): ").strip().lower()
-        if user_input == 's':
-            max_attempts = int(input("Por favor, indica el número de intentos que deseas realizar: "))
-            unprocessed_prompts = [{"student": k, "prompt": v} for k, v in unprocessed_prompts_dict.items()]
-            generate_responses_recursiva(df,unprocessed_prompts)
+        if response_content:
+            print(f"Response {i+1}:\n{response_content}\n{'-'*50}")
+            print(f"Prompt {i + 1}/{total_prompts} procesado correctamente.")
 
     return responses, parsed_evaluations
-
-
 
 
 def load_questions_from_excel(filepath):
@@ -312,13 +287,13 @@ def generate_and_process(df, questions):
     pydantic_parser = PydanticOutputParser(pydantic_object=EvaluationJSON)
     format_instructions = pydantic_parser.get_format_instructions()
     prompts = generate_prompts_from_dataframe(df, questions, format_instructions)
-    responses, parsed_responses = generate_responses_recursiva(df, prompts)
+    responses, parsed_responses = generate_responses(df, prompts)
     return responses, parsed_responses
 
 def save_data(responses, parsed_responses):
     """Guardar respuestas y parsed_responses en archivos."""
-    save_to_file(responses, "responses.json")
-    save_to_file(parsed_responses, "parsed_responses.json")
+    improved_save_to_file(responses, "responses.json")
+    improved_save_to_file(parsed_responses, "parsed_responses.json")
 
 def load_previous_data():
     """Cargar datos previamente guardados."""
@@ -334,58 +309,57 @@ def display_results(responses):
     for response in responses:
         print(response)
 
-
 def main():
-    """
-    Función principal que coordina el flujo del programa.
+    global unprocessed_prompts_dict
 
-    1. Verifica la existencia del archivo settings.json y, si no existe, crea uno solicitando los parámetros necesarios al usuario.
-    2. Inicializa las configuraciones y la conexión con OpenAI.
-    3. Ofrece al usuario la opción de cargar datos previamente guardados o nuevos datos.
-    4. Si se elige cargar datos previos:
-        - Carga las respuestas y evaluaciones previas.
-        - Si hay un error al cargar, procesa nuevos datos.
-        - Si no hay error, muestra las respuestas previamente generadas.
-        - Ofrece la opción de procesar nuevos datos.
-    5. Si se elige cargar nuevos datos o continuar con nuevos datos:
-        - Carga datos de estudiantes y preguntas.
-        - Genera prompts y obtiene respuestas de OpenAI.
-        - Guarda las respuestas y evaluaciones en archivos.
-        - Muestra las respuestas obtenidas.
-
-    Esta función se ejecuta cuando el script es llamado directamente.
-    """
     ensure_settings_exists()
     init()
     
-    # Opción para cargar datos previamente guardados o nuevos datos
+    pydantic_parser = PydanticOutputParser(pydantic_object=EvaluationJSON)
+    format_instructions = pydantic_parser.get_format_instructions()
+
     option = input("¿Desea cargar datos previamente guardados? (s/n): ").strip().lower()
     if option == 's':
         responses, parsed_responses = load_previous_data()
         if not responses or not parsed_responses:
             print("Error cargando datos. Cargando nuevos datos...")
             df, questions = load_data()
-            responses, parsed_responses = generate_and_process(df, questions)
+            prompts = generate_prompts_from_dataframe(df, questions, format_instructions) # Generar los prompts aquí.
+            responses, parsed_responses = generate_responses(df, prompts)
             save_data(responses, parsed_responses)
         else:
-            # Mostrar las respuestas previamente generadas
             display_results(responses)
-            # Pregunta al usuario si desea continuar procesando nuevos datos
             option_continue = input("¿Desea continuar procesando nuevos datos? (s/n): ").strip().lower()
             if option_continue == 's':
                 df, questions = load_data()
-                new_responses, new_parsed_responses = generate_and_process(df, questions)
+                prompts = generate_prompts_from_dataframe(df, questions, format_instructions)
+                new_responses, new_parsed_responses = generate_responses(df, prompts)
                 responses.extend(new_responses)
                 parsed_responses.extend(new_parsed_responses)
                 save_data(responses, parsed_responses)
                 display_results(new_responses)
     else:
         df, questions = load_data()
-        responses, parsed_responses = generate_and_process(df, questions)
+        prompts = prompts = generate_prompts_from_dataframe(df, questions, format_instructions)
+        responses, parsed_responses = generate_responses(df, prompts)
         save_data(responses, parsed_responses)
         display_results(responses)
 
+    # Si es que existen prompts que no se pudieron procesar
+    if unprocessed_prompts_dict:
+        unprocessed_count = len(unprocessed_prompts_dict)
+        print(f"\nQuedan {unprocessed_count} prompts sin procesar.")
+        user_input = input(f"¿Deseas procesar nuevamente los prompts no procesados? (s/n): ").strip().lower()
+        if user_input == 's':
+            unprocessed_prompts = [{"student": k, "prompt": v} for k, v in unprocessed_prompts_dict.items()]
+            unprocessed_responses, unprocessed_parsed_responses = generate_responses(df, unprocessed_prompts)
+            responses.extend(unprocessed_responses)
+            parsed_responses.extend(unprocessed_parsed_responses)
+            save_data(responses, parsed_responses)
+            display_results(unprocessed_responses)
 
+            # Limpiar el diccionario después de procesar
+            unprocessed_prompts_dict.clear()
 
 
 if __name__ == "__main__":
