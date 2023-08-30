@@ -22,7 +22,7 @@ class EvaluationJSON(BaseModel):
     relevancia: EvaluationCriteria
 
     def to_dict(self):
-        """Convierte el objeto a un diccionario"""
+        """Convierte el objeto a un diccionario serializable"""
         return {
             "estructura": self.estructura,
             "pregunta": self.pregunta,
