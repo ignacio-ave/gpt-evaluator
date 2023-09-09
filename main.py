@@ -270,9 +270,7 @@ def load_questions_from_excel(filepath):
     return questions
 
 
-def init():
-    """Inicialización: carga configuraciones y inicializa OpenAI"""
-    init_openai()
+
 
 def load_data():
     """Cargar datos de estudiantes y preguntas."""
@@ -313,7 +311,7 @@ def main():
     global unprocessed_prompts_dict
 
     ensure_settings_exists()
-    init()
+    init_openai()
     
     pydantic_parser = PydanticOutputParser(pydantic_object=EvaluationJSON)
     format_instructions = pydantic_parser.get_format_instructions()

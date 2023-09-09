@@ -4,17 +4,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Teniendo un mapa de estudiantes donde la clave es el n\u00famero de matr\u00edcula y el valor es la nota final. \u00bfC\u00f3mo podr\u00edas calcular la nota promedio de todos los estudiantes?",
-            "respuesta": "1. Se puede hacer una funci\u00f3n que recorre el mapa, mientras le va sumando a una variable auxiliar la nota final de todos los estudiantes, a la vez que suma 1 a un contador por cada iteraci\u00f3n (para obtener el n\u00famero de estudiantes). 2. Finalmente, la variable auxiliar se divide por el contador y as\u00ed se obtendr\u00e1 el promedio.",
+            "respuesta": "1. Se puede hacer una funci\u00f3n que recorre el mapa, mientras le va sumando a una variable auxiliar la nota final de todos los estudiantes, a la vez que suma 1 a un contador por cada iteraci\u00f3n(para obtener el numero de estudiantes).\n2. Finalmente la variable auxiliar se divide por el contador y as\u00ed obtendr\u00e1 el promedio.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada describe un procedimiento correcto para calcular la nota promedio de todos los estudiantes utilizando un mapa.",
+                "razonamiento": "La respuesta proporcionada es correcta. Propone un enfoque que recorre el mapa y suma las notas finales de los estudiantes, mientras mantiene un contador para obtener el n\u00famero de estudiantes.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y se entiende f\u00e1cilmente el procedimiento propuesto.",
+                "razonamiento": "La respuesta es clara y concisa en la explicaci\u00f3n del enfoque propuesto.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante, ya que aborda directamente la forma de obtener el promedio de las notas utilizando la estructura de datos proporcionada.",
+                "razonamiento": "La respuesta es relevante ya que aborda directamente el c\u00e1lculo de la nota promedio de todos los estudiantes en el mapa.",
                 "puntaje": 3.0
             }
         }
@@ -24,18 +24,18 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Tenemos una lista de productos con su precio y categor\u00eda. \u00bfC\u00f3mo podr\u00edamos calcular el precio promedio por categor\u00eda usando un mapa?",
-            "respuesta": "1ro se obtiene de la lista el valor y la categoria que corresponde, estos se almacenan en el mapa siendo el valor de la suma de la categoria y su clave es la categoria qu corresponde, con la ayuda de contadores se puede saber cuantas veces aparecio x categoria y despues gracias a que se guardo la suma total, se divide en el respectivo contador de las veces que apareci\u00f3 y se obtiene el promedio de precios m\u00e1s el nombre de la categoria con el que estaba asignado en el mapa.",
+            "respuesta": "No proporcionada",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada aborda correctamente el enfoque para calcular el precio promedio por categor\u00eda utilizando un mapa. Explica c\u00f3mo se almacena la suma de precios por categor\u00eda y c\u00f3mo se puede obtener el promedio utilizando contadores. ",
-                "puntaje": 3.0
+                "razonamiento": "La respuesta proporcionada no aborda la forma en que se puede calcular el precio promedio por categor\u00eda utilizando un mapa.",
+                "puntaje": 0.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Describe paso a paso el proceso de almacenamiento de la suma de precios y cuenta la frecuencia de cada categor\u00eda para calcular el promedio.",
-                "puntaje": 3.0
+                "razonamiento": "La respuesta proporcionada no existe, por lo que no se puede evaluar su claridad.",
+                "puntaje": 0.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta planteada y proporciona una soluci\u00f3n adecuada utilizando un mapa.",
-                "puntaje": 3.0
+                "razonamiento": "La respuesta proporcionada no es relevante porque no se aborda la pregunta planteada.",
+                "puntaje": 0.0
             }
         }
     },
@@ -46,16 +46,16 @@
             "pregunta": "\u00bfC\u00f3mo implementar\u00eda una cola de prioridad para administrar las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico, donde los clientes VIP tienen la m\u00e1s alta prioridad, seguidos por los clientes habituales y luego los nuevos clientes?",
             "respuesta": "al implementar una cola de prioridad dependiendo de que tipo de cliente le asigno mas o menos prioridad ya sea un numero alto para los que sean clientes vip un numero de bajo para los nuevos clientes, ordeno las prioridades como maximo dejando a los clientes vip como los que tienen mas prioridad a la hora de ser atendidos. Implementamos la cola de un heap que vaya almacenando el tipo de de cliente y se le asigna la prioridad a este mismo.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada no es correcta, porque no se detalla c\u00f3mo se implementar\u00eda la cola de prioridad en t\u00e9rminos de la estructura de datos que se utilizar\u00eda y c\u00f3mo se asignar\u00edan las prioridades a los diferentes tipos de clientes.",
-                "puntaje": 0.0
+                "razonamiento": "La respuesta es correcta, ya que propone utilizar una cola de prioridad para gestionar las solicitudes de atenci\u00f3n al cliente en el sistema de soporte t\u00e9cnico. Adem\u00e1s, establece un sistema de prioridades para los diferentes tipos de clientes, asignando n\u00fameros m\u00e1s altos a los clientes VIP y n\u00fameros m\u00e1s bajos a los nuevos clientes. Luego menciona que se implementa la cola utilizando un heap para almacenar el tipo de cliente y asignar la prioridad correspondiente.",
+                "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta proporcionada es poco clara, ya que no se detalla de forma precisa c\u00f3mo se realizar\u00eda la implementaci\u00f3n de la cola de prioridad para administrar las solicitudes de atenci\u00f3n al cliente en el sistema de soporte t\u00e9cnico.",
-                "puntaje": 1.0
+                "razonamiento": "La respuesta es clara y concisa. Explica de manera sencilla c\u00f3mo se implementar\u00eda la cola de prioridad y c\u00f3mo se asignar\u00edan las prioridades para cada tipo de cliente.",
+                "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante, ya que aborda el tema de implementar una cola de prioridad para administrar las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico. Sin embargo, la falta de detalle y claridad disminuye su relevancia.",
-                "puntaje": 2.0
+                "razonamiento": "La respuesta es relevante, ya que aborda directamente la implementaci\u00f3n de una cola de prioridad para administrar las solicitudes de atenci\u00f3n al cliente en el sistema de soporte t\u00e9cnico. Adem\u00e1s, menciona espec\u00edficamente c\u00f3mo se gestionar\u00edan los diferentes tipos de clientes seg\u00fan su prioridad.",
+                "puntaje": 3.0
             }
         }
     },
@@ -64,37 +64,37 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Considera que tienes un mapa donde la clave es el nombre de una pel\u00edcula y el valor es una lista de actores. \u00bfC\u00f3mo implementar\u00edas una funci\u00f3n para encontrar todas las pel\u00edculas en las que trabaja un actor determinado?",
-            "respuesta": "Le pedir\u00eda al usuario o ingresar\u00eda el nombre del actor a buscar. Luego implementar\u00eda una funci\u00f3n que recorra el mapa y busque en cada pel\u00edcula si el nombre del actor se encuentra en la lista de actores. Si se encuentra, se agrega el nombre de la pel\u00edcula a una lista que contiene todas las pel\u00edculas en las que trabaja el actor.",
+            "respuesta": "No proporcionada",
             "correctitud": {
-                "razonamiento": "La respuesta proporciona los pasos necesarios para implementar una funci\u00f3n que encuentre todas las pel\u00edculas en las que trabaja un actor. Explica c\u00f3mo se podr\u00eda buscar en el mapa y c\u00f3mo agregar los nombres de las pel\u00edculas a una lista resultante.",
-                "puntaje": 3.0
+                "razonamiento": "No se proporcion\u00f3 ninguna respuesta, por lo tanto no se puede evaluar la correctitud",
+                "puntaje": 0.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y est\u00e1 bien estructurada. Menciona los pasos a seguir y usa un lenguaje sencillo para explicar la soluci\u00f3n.",
-                "puntaje": 3.0
+                "razonamiento": "No se proporcion\u00f3 ninguna respuesta, por lo tanto no se puede evaluar la claridad",
+                "puntaje": 0.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante, ya que aborda directamente la pregunta y proporciona una soluci\u00f3n adecuada para encontrar todas las pel\u00edculas en las que trabaja un actor determinado en el contexto de un mapa clave-valor.",
-                "puntaje": 3.0
+                "razonamiento": "No se proporcion\u00f3 ninguna respuesta, por lo tanto no se puede evaluar la relevancia",
+                "puntaje": 0.0
             }
         }
     },
     {
         "student_id": "CHAMORRO ROJAS",
         "evaluation": {
-            "estructura": "Map",
+            "estructura": "Desconocido",
             "pregunta": "Imagina que tienes un mapa con las calificaciones de los estudiantes, donde la clave es el nombre del estudiante y el valor es su calificaci\u00f3n. \u00bfC\u00f3mo podr\u00edas implementar una funci\u00f3n para encontrar a todos los estudiantes que aprobaron (calificaci\u00f3n mayor a 5)?",
             "respuesta": "Como no se indica se asume que el mapa no esta ordenado. Podr\u00eda implementar una funci\u00f3n que obtenga el primero del mapa y revise su calificaci\u00f3n, si es mayor que 5 (como se indica en el enunciado), se guardar\u00e1 en una lista y se va repitiendo el proceso hasta que se acabe el mapa.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta, ya que propone una soluci\u00f3n para encontrar a los estudiantes que aprobaron. Utiliza un enfoque de revisar cada calificaci\u00f3n y agregar los estudiantes que obtienen una calificaci\u00f3n mayor a 5 a una lista.",
+                "razonamiento": "La respuesta proporcionada indica el proceso correcto para encontrar a todos los estudiantes que aprobaron seg\u00fan la definici\u00f3n establecida en la pregunta. Se itera a trav\u00e9s del mapa y se verifica que la calificaci\u00f3n de cada estudiante sea mayor a 5 antes de agregarlo a una lista.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Explica el enfoque de manera concisa y utiliza un lenguaje sencillo.",
+                "razonamiento": "La respuesta es clara y presenta el proceso paso a paso de c\u00f3mo encontrar a los estudiantes que aprobaron. Se menciona expl\u00edcitamente que se asume que el mapa no est\u00e1 ordenado y se explica c\u00f3mo se verifica la calificaci\u00f3n de cada estudiante.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante, ya que aborda directamente la pregunta planteada. Propone una soluci\u00f3n espec\u00edfica para encontrar a los estudiantes que aprobaron utilizando la estructura de datos dada.",
+                "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta y proporciona una estrategia adecuada para encontrar a los estudiantes que aprobaron en el mapa de calificaciones.",
                 "puntaje": 3.0
             }
         }
@@ -104,17 +104,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "\u00bfC\u00f3mo podr\u00edamos implementar una funci\u00f3n que tome una lista de palabras y retorne las palabras ordenadas de acuerdo a su longitud? (use TDAs y no algoritmos de ordenamiento)",
-            "respuesta": "con un mapa y seg\u00fan la prioridad que tenga estar\u00e1 mas arriba o mas abajo con esto contamos la longitud de la palabra y la almacenamos con un \u00edndice mayor o menor",
+            "respuesta": "con un mapa y seg\u00fan la prioridad que tenga estar\u00e1 mas arriba o mas abajo con esto contamos la longitud de la palabra y la almacenamos con un \u00edndice mayor o menor ",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada no muestra una implementaci\u00f3n utilizando un TDA ni explica claramente c\u00f3mo se llevar\u00eda a cabo el proceso de ordenamiento. No se proporciona suficiente informaci\u00f3n para determinar la correctitud de la respuesta.",
+                "razonamiento": "La respuesta proporcionada no aborda correctamente el uso de TDAs para resolver el problema planteado. No se menciona c\u00f3mo implementar la funci\u00f3n y el enfoque sugerido con un mapa no es claro.",
                 "puntaje": 0.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es confusa y dif\u00edcil de entender. No se proporciona una explicaci\u00f3n clara de c\u00f3mo se utilizar\u00eda un mapa o el \u00edndice para ordenar las palabras de acuerdo a su longitud.",
-                "puntaje": 1.0
+                "razonamiento": "La respuesta es confusa y carece de detalles espec\u00edficos sobre c\u00f3mo implementar la funci\u00f3n.",
+                "puntaje": 0.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta no es relevante para la pregunta realizada. No se proporciona una implementaci\u00f3n utilizando un TDA ni se explica c\u00f3mo se llevar\u00eda a cabo el proceso de ordenamiento.",
+                "razonamiento": "La respuesta no es relevante ya que no proporciona una soluci\u00f3n adecuada al problema planteado.",
                 "puntaje": 0.0
             }
         }
@@ -124,18 +124,18 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Suponga que tiene un conjunto de operaciones a realizar, cada una con un tiempo de duraci\u00f3n diferente. \u00bfC\u00f3mo podr\u00eda usar una cola de prioridad para ordenar las operaciones de manera que se realicen primero las m\u00e1s cortas?",
-            "respuesta": "Con un mont\u00edculo binario de m\u00ednimos, al definir la operaci\u00f3n de inserci\u00f3n correctamente en el mont\u00edculo, tiene que pasar que los elementos con menor duraci\u00f3n en este caso, se guarden en la ra\u00edz luego de una serie de pasos. As\u00ed al insertar una operaci\u00f3n, tiene que ir almacen\u00e1ndose en nuestro mont\u00edculo de menor a mayor.",
+            "respuesta": "No proporcionada",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta porque menciona el uso de un mont\u00edculo binario de m\u00ednimos para ordenar las operaciones seg\u00fan su duraci\u00f3n. Explica que al insertar una operaci\u00f3n en el mont\u00edculo, esta se guarda en la ra\u00edz y se almacena de menor a mayor duraci\u00f3n.",
-                "puntaje": 3.0
+                "razonamiento": "No proporcionada",
+                "puntaje": 0.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Utiliza un lenguaje conciso y preciso para describir el proceso de uso de un mont\u00edculo binario de m\u00ednimos para ordenar las operaciones.",
-                "puntaje": 3.0
+                "razonamiento": "No proporcionada",
+                "puntaje": 0.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante a la pregunta porque explica c\u00f3mo utilizar una cola de prioridad, espec\u00edficamente un mont\u00edculo binario de m\u00ednimos, para ordenar las operaciones seg\u00fan su duraci\u00f3n.",
-                "puntaje": 3.0
+                "razonamiento": "No proporcionada",
+                "puntaje": 0.0
             }
         }
     },
@@ -146,16 +146,16 @@
             "pregunta": "Imagina que tienes un mapa con las calificaciones de los estudiantes, donde la clave es el nombre del estudiante y el valor es su calificaci\u00f3n. \u00bfC\u00f3mo podr\u00edas implementar una funci\u00f3n para encontrar a todos los estudiantes que aprobaron (calificaci\u00f3n mayor a 5)?",
             "respuesta": "Crear\u00eda una lista con el nombre de todos los estudiantes. Se recorre esta lista y se copia el nombre de cada estudiante uno por uno a una variable que se usar\u00e1 como clave para acceder a su calificaci\u00f3n. Si esta es mayor a 5 se copia la variable con el nombre a un nuevo nodo que se ingresa a una segunda lista. Se repite este proceso para todos los estudiantes de la primera lista. Esta segunda lista solo tendr\u00eda estudiantes con una calificaci\u00f3n mayor a 5.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada no aborda correctamente el enfoque para encontrar a todos los estudiantes que aprobaron. En lugar de utilizar una lista, se deber\u00eda mencionar el uso de un bucle para recorrer el mapa de calificaciones y, para aquellos estudiantes cuya calificaci\u00f3n sea mayor a 5, a\u00f1adirlos a una nueva lista o mapa.",
-                "puntaje": 0.0
+                "razonamiento": "La respuesta proporcionada es correcta porque se describe un algoritmo que recorre los estudiantes y verifica su calificaci\u00f3n individualmente. Luego, crea una nueva lista con los estudiantes que aprobaron.",
+                "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender, describe el proceso de recorrer los estudiantes y acceder a sus calificaciones. Sin embargo, no menciona c\u00f3mo se realiza la verificaci\u00f3n de la calificaci\u00f3n y c\u00f3mo se a\u00f1aden los estudiantes a la segunda lista.",
-                "puntaje": 2.0
+                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Se explica paso a paso c\u00f3mo se abordar\u00eda el problema de encontrar a los estudiantes que aprobaron.",
+                "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante en cuanto a la descripci\u00f3n del proceso de recorrido de los estudiantes y acceso a las calificaciones. Sin embargo, no proporciona una soluci\u00f3n correcta para encontrar a los estudiantes que aprobaron.",
-                "puntaje": 1.0
+                "razonamiento": "La respuesta proporcionada aborda directamente la pregunta planteada. Se describe una implementaci\u00f3n adecuada para encontrar a los estudiantes que aprobaron, utilizando la estructura de mapa proporcionada.",
+                "puntaje": 3.0
             }
         }
     },
@@ -166,15 +166,15 @@
             "pregunta": "Imagina que tienes un mapa con las calificaciones de los estudiantes, donde la clave es el nombre del estudiante y el valor es su calificaci\u00f3n. \u00bfC\u00f3mo podr\u00edas implementar una funci\u00f3n para encontrar a todos los estudiantes que aprobaron (calificaci\u00f3n mayor a 5)?",
             "respuesta": "No proporcionada",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada no aborda la pregunta ya que no brinda una soluci\u00f3n espec\u00edfica para encontrar a todos los estudiantes que aprobaron.",
+                "razonamiento": "No proporcionada",
                 "puntaje": 0.0
             },
             "claridad": {
-                "razonamiento": "La respuesta no est\u00e1 clara ya que no se proporciona ninguna explicaci\u00f3n o c\u00f3digo para abordar el problema planteado.",
+                "razonamiento": "No proporcionada",
                 "puntaje": 0.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta no es relevante ya que no aborda la pregunta planteada.",
+                "razonamiento": "No proporcionada",
                 "puntaje": 0.0
             }
         }
@@ -186,15 +186,15 @@
             "pregunta": "Imagina que tienes un mapa con las calificaciones de los estudiantes, donde la clave es el nombre del estudiante y el valor es su calificaci\u00f3n. \u00bfC\u00f3mo podr\u00edas implementar una funci\u00f3n para encontrar a todos los estudiantes que aprobaron (calificaci\u00f3n mayor a 5)?",
             "respuesta": "Dentro de la funci\u00f3n crear\u00eda una lista para ir guardando los datos de los estudiantes que posean una nota mayor a 5, luego recorrer\u00eda el mapa y buscar\u00eda uno a uno e ir\u00eda guardando los nombres dentro de la lista si su nota es mayor a 5.",
             "correctitud": {
-                "razonamiento": "La respuesta propuesta es correcta, ya que menciona la creaci\u00f3n de una lista para almacenar los nombres de los estudiantes que aprobaron (calificaci\u00f3n mayor a 5) y luego recorre el mapa para buscar los estudiantes que cumplen con esta condici\u00f3n. La soluci\u00f3n propuesta es adecuada para el problema planteado.",
+                "razonamiento": "La respuesta proporcionada es correcta, ya que propone crear una lista para almacenar los nombres de los estudiantes que aprobaron, y luego se recorre el mapa verificando si la calificaci\u00f3n de cada estudiante es mayor a 5. Si es as\u00ed, se agrega el nombre del estudiante a la lista. Esto cumple con el objetivo de encontrar a todos los estudiantes que aprobaron.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y concisa. Se explica de manera sencilla c\u00f3mo se implementar\u00eda la funci\u00f3n para encontrar a los estudiantes que aprobaron, utilizando una lista para almacenar los nombres y un recorrido del mapa para buscar los estudiantes que cumplen con la condici\u00f3n. No se mencionan detalles innecesarios o confusos.",
+                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. El proceso de creaci\u00f3n de la lista y la forma en que se recorre el mapa se explican de manera concisa y precisa.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante, ya que proporciona una soluci\u00f3n precisa y directa al problema planteado. Aborda la implementaci\u00f3n de la funci\u00f3n solicitada y no se desv\u00eda del tema.",
+                "razonamiento": "La respuesta es relevante ya que aborda directamente el objetivo de la pregunta, que es encontrar a los estudiantes que aprobaron. Adem\u00e1s, propone una soluci\u00f3n adecuada utilizando una estructura de lista para almacenar los nombres de los estudiantes.",
                 "puntaje": 3.0
             }
         }
@@ -206,15 +206,15 @@
             "pregunta": "Describa c\u00f3mo se puede utilizar un conjunto o mapa para verificar si una lista tiene elementos duplicados.",
             "respuesta": "dentro del mapa se pueden guardar los elementos de la lista utilizando una clave para cada elemento. Antes de guardas los elementos en el mapa har\u00e1 una busqueda para ver si el elemento se encuentra dentro del mapa. Si no encuentra el elemento, se agregar\u00e1 en el mapa, en caso contrario se imprimira que el elemento esta repetido en la lista.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada describe de manera adecuada c\u00f3mo utilizar un mapa para verificar si una lista tiene elementos duplicados. Explica claramente que se pueden guardar los elementos de la lista en el mapa utilizando una clave para cada elemento. Luego hace una b\u00fasqueda en el mapa para verificar si el elemento ya existe o no. Si no existe, se agrega al mapa, de lo contrario se identifica que el elemento est\u00e1 repetido en la lista.",
+                "razonamiento": "La respuesta proporcionada es correcta. Explica c\u00f3mo utilizar un conjunto o mapa para verificar elementos duplicados en una lista.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y concisa. Utiliza un lenguaje sencillo y explica cada paso de manera ordenada y comprensible.",
+                "razonamiento": "La respuesta es clara y utiliza un lenguaje sencillo para describir c\u00f3mo utilizar un conjunto o mapa.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que proporciona una soluci\u00f3n espec\u00edfica utilizando un conjunto o mapa. Adem\u00e1s, aborda directamente la pregunta planteada.",
+                "razonamiento": "La respuesta es relevante ya que proporciona una soluci\u00f3n adecuada para verificar elementos duplicados en una lista utilizando un conjunto o mapa.",
                 "puntaje": 3.0
             }
         }
@@ -226,15 +226,15 @@
             "pregunta": "Tenemos una lista de productos con su precio y categor\u00eda. \u00bfC\u00f3mo podr\u00edamos calcular el precio promedio por categor\u00eda usando un mapa?",
             "respuesta": "En el mapa se pueden insertar los elementos de la lista como una colecci\u00f3n de pares siendo la clave la categor\u00eda y el valor una lista de los productos con sus precios. Para calcular el precio promedio por categor\u00eda, se recorre la lista de productos realizando una sumatoria del total de productos y una sumatoria con el precio de cada producto, luego ese total se divide en la cantidad total de productos de esa categor\u00eda, despu\u00e9s de obtener el precio promedio, este valor se almacena en una nueva lista.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta porque plantea el uso de un mapa como estructura de datos para almacenar los productos por categor\u00eda y los precios asociados. Adem\u00e1s, explica c\u00f3mo calcular el precio promedio por categor\u00eda mediante la sumatoria de productos y precios, y la posterior divisi\u00f3n del total entre la cantidad de productos de esa categor\u00eda. Por \u00faltimo, menciona que el resultado se almacena en una nueva lista.",
+                "razonamiento": "La respuesta proporciona un enfoque adecuado para calcular el precio promedio por categor\u00eda utilizando un mapa. Se propone insertar los elementos de la lista en un mapa, usando la categor\u00eda como clave y una lista de productos con sus precios como valor. Luego se realiza una sumatoria de productos y precios por categor\u00eda, y se divide para obtener el precio promedio. ",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y presenta de manera organizada los pasos para calcular el precio promedio por categor\u00eda utilizando un mapa. Se entiende c\u00f3mo se realiza la sumatoria de productos y precios, y c\u00f3mo se almacena el resultado en una nueva lista. No hay ambig\u00fcedades en la explicaci\u00f3n.",
+                "razonamiento": "La respuesta es clara y utiliza un lenguaje conciso y preciso para explicar el proceso de c\u00e1lculo del precio promedio por categor\u00eda usando un mapa.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que responde directamente a la pregunta planteada. Explica de manera precisa c\u00f3mo usar un mapa para almacenar los productos y precios por categor\u00eda, y c\u00f3mo calcular el precio promedio. Adem\u00e1s, menciona el almacenamiento del resultado en una nueva lista, lo que es \u00fatil para un posible procesamiento posterior.",
+                "razonamiento": "La respuesta es relevante para resolver el problema planteado en la pregunta, ya que describe una forma de calcular el precio promedio por categor\u00eda utilizando un mapa.",
                 "puntaje": 3.0
             }
         }
@@ -246,15 +246,15 @@
             "pregunta": "Considere un conjunto de estudiantes con sus respectivas calificaciones. \u00bfC\u00f3mo podr\u00eda usar una cola de prioridad para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas?",
             "respuesta": "En ese caso habr\u00eda que recorrer los estudiantes y ver sus calificaciones en las materia, de estas se sacan un promedio e implementando una cola con prioridad con mont\u00edculo de m\u00e1ximos se tiene al con mayor calificaci\u00f3n en la ra\u00edz, siendo el alumnos que tiene mayor promedio de los primeros. De esta manera se obtienen los alumnos con 5 mejores calificaciones, siendo el alumno que esta en el nodo ra\u00edz el que tiene el mayor promedio y al momento de eliminar termina siendo el segundo en la ra\u00edz y as\u00ed sucesivamente hasta el quinto. Por ultimo la prioridad es el promedio.",
             "correctitud": {
-                "razonamiento": "-La respuesta proporcionada describe correctamente c\u00f3mo usar una cola de prioridad para identificar los 5 estudiantes con las calificaciones m\u00e1s altas.\n-Explica que se debe calcular el promedio de las calificaciones de los estudiantes y luego implementar una cola con prioridad con un mont\u00edculo de m\u00e1ximos.\n-Explica que la ra\u00edz de la cola ser\u00e1 el estudiante con la calificaci\u00f3n m\u00e1s alta y al eliminar la ra\u00edz se pasa al siguiente estudiante con la siguiente calificaci\u00f3n m\u00e1s alta.\n-Se asegura de que la descripci\u00f3n termine con los 5 estudiantes con las calificaciones m\u00e1s altas y menciona que la prioridad es el promedio.",
+                "razonamiento": "La respuesta indica correctamente c\u00f3mo se podr\u00eda utilizar una cola de prioridad con un mont\u00edculo de m\u00e1ximos para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas. Explica que se puede calcular el promedio de las calificaciones de los estudiantes y utilizar este promedio como valor de prioridad en la cola de prioridad. Los estudiantes con los promedios m\u00e1s altos estar\u00e1n en las primeras posiciones de la cola de prioridad.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "-La respuesta es clara y utiliza un lenguaje t\u00e9cnico adecuado.\n-Explica paso a paso c\u00f3mo usar una cola de prioridad para encontrar los 5 estudiantes con las calificaciones m\u00e1s altas.\n-La respuesta est\u00e1 bien estructurada y f\u00e1cil de entender.",
+                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Explica de manera concisa c\u00f3mo se puede obtener la lista de los 5 estudiantes con las calificaciones m\u00e1s altas utilizando una cola de prioridad.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "-La respuesta es relevante ya que se ajusta a la pregunta planteada y aborda espec\u00edficamente el uso de una cola de prioridad para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas.\n-Proporciona una soluci\u00f3n eficiente y espec\u00edfica para el problema planteado.",
+                "razonamiento": "La respuesta es relevante ya que describe el uso espec\u00edfico de una cola de prioridad para resolver el problema planteado sobre la identificaci\u00f3n de los 5 estudiantes con las calificaciones m\u00e1s altas. Explica c\u00f3mo se puede utilizar una cola de prioridad con un mont\u00edculo de m\u00e1ximos y c\u00f3mo se puede asignar el promedio de calificaciones como valor de prioridad.",
                 "puntaje": 3.0
             }
         }
@@ -266,15 +266,15 @@
             "pregunta": "Considera que tienes un mapa donde la clave es el nombre de una pel\u00edcula y el valor es una lista de actores. \u00bfC\u00f3mo implementar\u00edas una funci\u00f3n para encontrar todas las pel\u00edculas en las que trabaja un actor determinado?",
             "respuesta": "guardar\u00eda las pel\u00edculas en tablas hash con el nombre clave y teniendo dentro la lista de los actores que participan en cada una de estas. Despu\u00e9s recorrer\u00eda buscando pel\u00edcula por pel\u00edcula, recorriendo estas y si el actor buscado es encontrado en la pel\u00edcula, el nombre de la pel\u00edcula en el que se encontr\u00f3 el actor seria agregada a otra lista donde despu\u00e9s de recorrer todos las pel\u00edculas se retornar\u00eda finalmente la lista con las pel\u00edculas en el cual el actor actu\u00f3.",
             "correctitud": {
-                "razonamiento": "La respuesta propuesta es correcta, ya que sugiere utilizar una tabla hash para almacenar las pel\u00edculas con la lista de actores asociados a cada una. Luego, mediante un proceso de b\u00fasqueda, se recorren todas las pel\u00edculas y se verifica si el actor buscado se encuentra en alguna de ellas. En caso afirmativo, se agrega el nombre de la pel\u00edcula a una lista de resultados. Finalmente, se devuelve la lista con las pel\u00edculas en las que el actor ha trabajado. Este enfoque es una soluci\u00f3n v\u00e1lida para el problema planteado.",
+                "razonamiento": "La respuesta propuesta indica una forma adecuada de implementar la funci\u00f3n para encontrar todas las pel\u00edculas en las que trabaja un actor determinado.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Se explica de manera concisa y precisa c\u00f3mo implementar la funci\u00f3n para encontrar todas las pel\u00edculas en las que trabaja un actor determinado utilizando una tabla hash y un proceso de b\u00fasqueda. No hay ambig\u00fcedades ni confusiones en la explicaci\u00f3n.",
+                "razonamiento": "La respuesta es clara y proporciona una explicaci\u00f3n paso a paso del proceso que se debe seguir para llegar al resultado esperado.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante, ya que aborda directamente el problema planteado de encontrar todas las pel\u00edculas en las que trabaja un actor determinado. La soluci\u00f3n propuesta utilizando una tabla hash y un proceso de b\u00fasqueda es una forma eficiente y adecuada de resolver el problema, ya que permite realizar la b\u00fasqueda de manera eficiente y devolver la lista de pel\u00edculas en las que el actor ha trabajado.",
+                "razonamiento": "La respuesta es relevante ya que aborda directamente la forma de implementar la funci\u00f3n solicitada.",
                 "puntaje": 3.0
             }
         }
@@ -286,15 +286,15 @@
             "pregunta": "\u00bfC\u00f3mo implementar\u00eda una cola de prioridad para administrar las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico, donde los clientes VIP tienen la m\u00e1s alta prioridad, seguidos por los clientes habituales y luego los nuevos clientes?",
             "respuesta": "Implementamos una cola de m\u00e1ximos, donde primero asignamos a cada cliente, seg\u00fan si son vip o no, su prioridad, por ejemplo 3. Luego los clientes habituales su prioridad correspondiendentes, como 2, y finalizamos con los nuevos clientes con prioridad 1. (Asumimos que cada cliente segun su reputacion, mantienen la misma prioridad que sus pares, almacenando los que poseen misma prioridad por orden de llegada) Al momento de administrar la atenci\u00f3n, simplemente vamos sacando el top de la cola y listo.",
             "correctitud": {
-                "razonamiento": "La respuesta proporciona una soluci\u00f3n adecuada para implementar una cola de prioridad en el contexto descrito. Se asignan prioridades basadas en la condici\u00f3n de ser VIP, cliente habitual o nuevo cliente, y se utiliza una cola de m\u00e1ximos para administrar las solicitudes de atenci\u00f3n al cliente.",
+                "razonamiento": "La respuesta proporcionada es correcta ya que plantea la implementaci\u00f3n de una cola de m\u00e1ximos, donde se asignan prioridades a los clientes seg\u00fan su categor\u00eda (VIP, habituales, nuevos) y se va administrando la atenci\u00f3n sacando el elemento con mayor prioridad.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y concisa al describir c\u00f3mo implementar una cola de prioridad para administrar las solicitudes de atenci\u00f3n al cliente en el contexto dado. Se explica de manera coherente la asignaci\u00f3n de prioridades y el uso de una cola de m\u00e1ximos.",
+                "razonamiento": "La respuesta proporcionada es clara y f\u00e1cil de entender. Se explica de manera concisa c\u00f3mo se implementar\u00eda la cola de prioridad y c\u00f3mo se administrar\u00eda la atenci\u00f3n a los clientes.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es altamente relevante ya que aborda directamente la pregunta y ofrece una soluci\u00f3n espec\u00edfica para implementar una cola de prioridad en un sistema de soporte t\u00e9cnico para administrar las solicitudes de atenci\u00f3n al cliente.",
+                "razonamiento": "La respuesta proporcionada es relevante ya que aborda directamente la implementaci\u00f3n de una cola de prioridad para administrar las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico, siguiendo el criterio de prioridad VIP > habituales > nuevos clientes.",
                 "puntaje": 3.0
             }
         }
@@ -306,15 +306,15 @@
             "pregunta": "Describa c\u00f3mo se puede utilizar un conjunto o mapa para verificar si una lista tiene elementos duplicados.",
             "respuesta": "Implementando el mapa, podr\u00eda ser pasar los datos de la lista al mapa, se generan las respectivas claves de estas, para as\u00ed compararlas con las del resto, as\u00ed sabiendo cuantos datos est\u00e1n repetidos.",
             "correctitud": {
-                "razonamiento": "La respuesta muestra un conocimiento b\u00e1sico de c\u00f3mo utilizar un conjunto o mapa para verificar duplicados en una lista. Se menciona la creaci\u00f3n de claves en el mapa para comparar con el resto de elementos y determinar cu\u00e1ntos est\u00e1n repetidos. Sin embargo, no se profundiza en c\u00f3mo se implementar\u00eda exactamente este proceso.",
-                "puntaje": 2.0
-            },
-            "claridad": {
-                "razonamiento": "La respuesta es clara y concisa en la explicaci\u00f3n de c\u00f3mo utilizar un conjunto o mapa para verificar duplicados en una lista. Se mencionan de manera general los pasos a seguir para lograr esto.",
+                "razonamiento": "La respuesta proporcionada es correcta ya que sugiere utilizar un mapa o conjunto para verificar la existencia de elementos duplicados en una lista. Propone tomar los datos de la lista y asignarlos como claves en el mapa, luego comparar esas claves con las claves restantes para determinar cu\u00e1ntos datos est\u00e1n repetidos.",
                 "puntaje": 3.0
             },
+            "claridad": {
+                "razonamiento": "La respuesta es clara en su explicaci\u00f3n del proceso de utilizaci\u00f3n de un mapa o conjunto para verificar duplicados en una lista. Sin embargo, podr\u00eda beneficiarse de una mejor estructura y organizaci\u00f3n de las ideas.",
+                "puntaje": 2.0
+            },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que aborda directamente c\u00f3mo utilizar un conjunto o mapa para verificar duplicados en una lista, que es lo que se solicita en la pregunta.",
+                "razonamiento": "La respuesta es relevante ya que describe una forma adecuada de utilizar un mapa o conjunto para verificar duplicados en una lista, que es una aplicaci\u00f3n com\u00fan de estas estructuras de datos.",
                 "puntaje": 3.0
             }
         }
@@ -324,17 +324,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Describa c\u00f3mo se puede utilizar un conjunto o mapa para verificar si una lista tiene elementos duplicados.",
-            "respuesta": "Ingresando en el mapa el elemento, pero antes de esto buscando si ya se registro con anterioridad en el mapa, \u00f3sea realizaremos un searchMap(elemento)  y si este retorna NULL significar\u00eda que aun no se encuentra duplicado, pero si alg\u00fan momento el searchMap encuentra el elemento significar\u00eda que la lista tiene el elemento duplicado.",
+            "respuesta": "Ingresando en el mapa el elemento, pero antes de esto buscando si ya se registro con anterioridad en el mapa, \u00f3sea realizaremos un searchMap(elemento) y si este retorna NULL significar\u00eda que aun no se encuentra duplicado, pero si alg\u00fan momento el searchMap encuentra el elemento significar\u00eda que la lista tiene el elemento duplicado.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta ya que propone utilizar un conjunto o mapa para verificar duplicados en una lista. El uso de un mapa permite almacenar los elementos de la lista como claves y verificar si ya existen en el mapa antes de agregarlos. Si al buscar un elemento en el mapa se encuentra, significa que hay duplicados en la lista. Si no se encuentra, significa que no hay duplicados.",
+                "razonamiento": "La respuesta proporcionada describe correctamente c\u00f3mo utilizar un set o map para verificar si una lista tiene elementos duplicados. Propone la idea de ingresar cada elemento en el mapa y realizar una b\u00fasqueda para determinar si ya existe en el mapa. Si la b\u00fasqueda retorna NULL, significa que el elemento no est\u00e1 duplicado, pero si se encuentra el elemento en alguna b\u00fasqueda, significa que la lista tiene elementos duplicados.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y concisa. Explica c\u00f3mo utilizar un conjunto o mapa para verificar duplicados en una lista y menciona el uso de la funci\u00f3n de b\u00fasqueda en el mapa. Podr\u00eda mejorar al incluir ejemplos o explicar m\u00e1s detalladamente c\u00f3mo se implementar\u00eda el mapa.",
-                "puntaje": 2.5
+                "razonamiento": "La respuesta es clara y concisa. Describe paso a paso c\u00f3mo utilizar un set o map para verificar duplicados en una lista.",
+                "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que proporciona una soluci\u00f3n espec\u00edfica para verificar duplicados en una lista utilizando un conjunto o mapa. Esta soluci\u00f3n es \u00fatil en los casos en que se necesita identificar y eliminar duplicados en una lista.",
+                "razonamiento": "La respuesta es relevante ya que explica de manera precisa y relevante c\u00f3mo utilizar un conjunto o mapa para verificar si una lista tiene elementos duplicados.",
                 "puntaje": 3.0
             }
         }
@@ -344,17 +344,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Suponga que tiene un conjunto de operaciones a realizar, cada una con un tiempo de duraci\u00f3n diferente. \u00bfC\u00f3mo podr\u00eda usar una cola de prioridad para ordenar las operaciones de manera que se realicen primero las m\u00e1s cortas?",
-            "respuesta": "Inicializamos un cola de prioridad donde el dato sea la tarea y la prioridad sea el tiempo, para esto utilizamos un monticulo que ordene por minimos para que la  operacion con menor duracion de tiempo se almacene como el primero y los de mayor duracion se encuentren al final. Luego simplemente tendriamos que ir sacando y borrando las operaciones del monticulo, para ir realizandolas en el orden de menor tiempo requerido.",
+            "respuesta": "Inicializamos un cola de prioridad donde el dato sea la tarea y la prioridad sea el tiempo, para esto utilizamos un monticulo que ordene por minimos para que la operacion con menor duracion de tiempo se almacene como el primero y los de mayor duracion se encuentren al final. Luego simplemente tendriamos que ir sacando y borrando las operaciones del monticulo, para ir realizandolas en el orden de menor tiempo requerido.",
             "correctitud": {
-                "razonamiento": "La respuesta menciona correctamente que debemos utilizar una cola de prioridad donde el dato sea la tarea y la prioridad sea el tiempo de duraci\u00f3n. Adem\u00e1s, menciona que se puede utilizar un mont\u00edculo para implementar esta cola de prioridad. Tambi\u00e9n menciona correctamente que se debe ordenar por m\u00ednimos para que la operaci\u00f3n con menor duraci\u00f3n se almacene como el primero y las de mayor duraci\u00f3n se encuentren al final. Finalmente, menciona que debemos ir sacando y borrando las operaciones del mont\u00edculo para realizarlas en el orden de menor tiempo requerido.",
+                "razonamiento": "La respuesta propuesta es correcta. Explica que debemos usar una cola de prioridad (implementada como un mont\u00edculo) donde el dato sea la tarea y la prioridad sea el tiempo. El mont\u00edculo ordenar\u00e1 las operaciones por su tiempo, de manera que la operaci\u00f3n con el menor tiempo est\u00e9 en la cima. Al ir sacando y borrando las operaciones del mont\u00edculo, se realizar\u00e1n primero las operaciones con menor tiempo requerido.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta explica de manera clara y concisa c\u00f3mo utilizar una cola de prioridad para ordenar las operaciones. Menciona paso a paso c\u00f3mo inicializar la cola de prioridad y utilizar un mont\u00edculo para ordenar por m\u00ednimos. Tambi\u00e9n menciona claramente c\u00f3mo sacar y borrar las operaciones del mont\u00edculo para realizarlas en el orden de menor tiempo.",
+                "razonamiento": "La respuesta es clara y concisa. Utiliza un lenguaje simple y describe paso a paso c\u00f3mo se utiliza una cola de prioridad para ordenar las operaciones por tiempo. Es f\u00e1cil de entender para cualquier persona familiarizada con las estructuras de datos.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es altamente relevante ya que aborda directamente el uso de una cola de prioridad para ordenar las operaciones en base al tiempo de duraci\u00f3n. Proporciona una soluci\u00f3n efectiva y eficiente para resolver el problema planteado en la pregunta.",
+                "razonamiento": "La respuesta es relevante y directamente responde a la pregunta planteada. Explica c\u00f3mo se puede utilizar una cola de prioridad para ordenar las operaciones por duraci\u00f3n y realizar primero las m\u00e1s cortas.",
                 "puntaje": 3.0
             }
         }
@@ -364,18 +364,18 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Considera que tienes un mapa donde la clave es el nombre de una pel\u00edcula y el valor es una lista de actores. \u00bfC\u00f3mo implementar\u00edas una funci\u00f3n para encontrar todas las pel\u00edculas en las que trabaja un actor determinado?",
-            "respuesta": "La funci\u00f3n buscaria el \"nombre\" del actor avanzando a trav\u00e9s del mapa, cuando encontrase su nombre, esta se imprimir\u00eda de inmediato",
+            "respuesta": "La funci\u00f3n buscar\u00eda el \"nombre\" del actor avanzando a trav\u00e9s del mapa, cuando encontrase su nombre, esta se imprimir\u00eda de inmediato",
             "correctitud": {
-                "razonamiento": "La respuesta propuesta no permite encontrar todas las pel\u00edculas en las que trabaja el actor determinado, sino solo una \u00fanica pel\u00edcula.",
+                "razonamiento": "La respuesta no proporcionada",
                 "puntaje": 0.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara, ya que indica de forma expl\u00edcita c\u00f3mo se realizar\u00eda la b\u00fasqueda del actor en el mapa.",
-                "puntaje": 2.0
+                "razonamiento": "La respuesta es clara y concisa, explica de manera sencilla el proceso para encontrar las pel\u00edculas en las que trabaja un actor determinado.",
+                "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es irrelevante, ya que no proporciona la informaci\u00f3n solicitada de encontrar todas las pel\u00edculas en las que trabaja el actor determinado.",
-                "puntaje": 0.0
+                "razonamiento": "La respuesta es relevante ya que cumple con el objetivo de la pregunta, muestra c\u00f3mo implementar una funci\u00f3n para encontrar las pel\u00edculas en las que trabaja un actor determinado en la estructura planteada.",
+                "puntaje": 3.0
             }
         }
     },
@@ -386,15 +386,15 @@
             "pregunta": "Considera que tienes un mapa donde la clave es el nombre de una pel\u00edcula y el valor es una lista de actores. \u00bfC\u00f3mo implementar\u00edas una funci\u00f3n para encontrar todas las pel\u00edculas en las que trabaja un actor determinado?",
             "respuesta": "La funci\u00f3n solicitar\u00eda ingresar el actor que se quiere encontrar, luego recorrer\u00eda el mapa completo comparando el nombre en cada lista de actores por pel\u00edcula, y si encuentra el nombre entonces la pel\u00edcula se a\u00f1ade a una pila. Finalmente para mostrar cu\u00e1les son estas pel\u00edculas se recorre la pila imprimi\u00e9ndolas.",
             "correctitud": {
-                "razonamiento": "La respuesta proporciona la forma correcta de buscar todas las pel\u00edculas en las que trabaja un actor determinado. Se recorre el mapa de pel\u00edculas y para cada lista de actores se compara el nombre del actor con el nombre ingresado. Si el nombre coincide, se a\u00f1ade la pel\u00edcula a una pila.",
+                "razonamiento": "La respuesta proporcionada es correcta ya que explica claramente c\u00f3mo implementar una funci\u00f3n para encontrar todas las pel\u00edculas en las que trabaja un actor determinado utilizando un mapa donde la clave es el nombre de la pel\u00edcula y el valor es una lista de actores.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta explica de manera clara el proceso para encontrar todas las pel\u00edculas en las que trabaja un actor determinado. Se menciona que se solicitar\u00e1 el nombre del actor a buscar, se recorrer\u00e1 el mapa comparando los nombres en las listas de actores y se a\u00f1adir\u00e1n las pel\u00edculas correspondientes a una pila.",
+                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Explica los pasos necesarios para encontrar las pel\u00edculas en las que trabaja un actor determinado utilizando una pila para almacenar las pel\u00edculas encontradas.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que proporciona una correcta implementaci\u00f3n para buscar todas las pel\u00edculas en las que trabaja un actor espec\u00edfico en un mapa de pel\u00edculas y actores.",
+                "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta planteada y proporciona una soluci\u00f3n adecuada utilizando la estructura de datos espec\u00edfica mencionada en la pregunta.",
                 "puntaje": 3.0
             }
         }
@@ -402,19 +402,19 @@
     {
         "student_id": "FREDES CORDERO",
         "evaluation": {
-            "estructura": "Desconocido",
-            "pregunta": "Considera que tienes un mapa donde la clave es el nombre de una pel\u00edcula y el valor es una lista de actores. \u00bfC\u00f3mo implementar\u00edas una funci\u00f3n para encontrar todas las pel\u00edculas en las que trabaja un actor determinado?",
-            "respuesta": "Lo que har\u00eda es recorrer cada pel\u00edcula que se encuentre en el mapa, al ingresar a una nueva pel\u00edcula ingreso a su lista de actores y busco si se encuentra el actor deseado. Si se encuentra, se aumentar\u00eda un contador para saber que se encuentra en una pel\u00edcula. Si se quisiera tambi\u00e9n guardar el nombre de la pel\u00edcula, se podr\u00eda generar una nueva lista guardando el nombre de la pel\u00edcula si se encuentra el actor en ella. Para finalmente recorrer esta nueva lista imprimiendo su clave.",
+            "estructura": "Mapa",
+            "pregunta": "\u00bfC\u00f3mo implementar\u00edas una funci\u00f3n para encontrar todas las pel\u00edculas en las que trabaja un actor determinado?",
+            "respuesta": "Lo que har\u00eda es recorrer cada pel\u00edcula que se encuentre en el mapa. Al ingresar a una nueva pel\u00edcula, ingreso a su lista de actores y busco si se encuentra el actor deseado. Si se encuentra, se aumentar\u00eda un contador para saber que se encuentra en una pel\u00edcula. Si se quisiera tambi\u00e9n guardar el nombre de la pel\u00edcula, se podr\u00eda generar una nueva lista guardando el nombre de la pel\u00edcula si se encuentra el actor en ella. Finalmente, se recorrer\u00eda esta nueva lista e imprimir\u00eda su clave.",
             "correctitud": {
-                "razonamiento": "La respuesta propuesta es correcta. Propone recorrer cada pel\u00edcula en el mapa, luego ingresa a la lista de actores de cada pel\u00edcula y busca si el actor deseado se encuentra en ella. Si se encuentra, se realiza la acci\u00f3n deseada, ya sea aumentar un contador o guardar el nombre de la pel\u00edcula en una nueva lista. El enfoque propuesto es adecuado para lograr el objetivo planteado en la pregunta.",
+                "razonamiento": "La respuesta propuesta describe correctamente c\u00f3mo se podr\u00eda implementar una funci\u00f3n para encontrar todas las pel\u00edculas en las que trabaja un actor determinado utilizando un mapa.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta est\u00e1 redactada de manera clara y concisa. Explica paso a paso lo que se debe hacer para encontrar todas las pel\u00edculas en las que trabaja un actor determinado utilizando un mapa con claves de nombres de pel\u00edculas y valores de listas de actores. Se entiende claramente el enfoque propuesto.",
+                "razonamiento": "La respuesta es clara en sus explicaciones, utilizando un lenguaje sencillo y f\u00e1cil de entender.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante al abordar directamente el problema planteado en la pregunta. Propone una soluci\u00f3n adecuada y realiza el proceso de b\u00fasqueda y almacenamiento de forma eficiente utilizando un enfoque basado en recorrer las pel\u00edculas y verificar si el actor deseado se encuentra en la lista de actores de cada pel\u00edcula.",
+                "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta planteada y proporciona una soluci\u00f3n adecuada.",
                 "puntaje": 3.0
             }
         }
@@ -426,16 +426,16 @@
             "pregunta": "Teniendo un mapa de estudiantes donde la clave es el n\u00famero de matr\u00edcula y el valor es la nota final. \u00bfC\u00f3mo podr\u00edas calcular la nota promedio de todos los estudiantes?",
             "respuesta": "PARA CALCULAR LA CALIFICACI\u00d3N PROMEDIO DE TODOS LOS ESTUDIANTES EN UN MAPA DE ESTUDIANTES DONDE LA CLAVE ES EL N\u00daMERO DE MATR\u00cdCULA Y EL VALOR ES LA CALIFICACI\u00d3N FINAL, PUEDE SUMAR TODOS LOS VALORES DEL MAPA Y DIVIDIR POR LA CANTIDAD DE VALORES EN EL MAPA",
             "correctitud": {
-                "razonamiento": "La respuesta es correcta ya que indica el proceso correcto para calcular la nota promedio de todos los estudiantes en base al mapa de estudiantes dado.",
-                "puntaje": 3.0
+                "razonamiento": "",
+                "puntaje": 0.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender, ya que explica el procedimiento necesario para calcular la nota promedio utilizando los valores del mapa de estudiantes.",
-                "puntaje": 3.0
+                "razonamiento": "",
+                "puntaje": 0.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que responde directamente a la pregunta planteada y proporciona una soluci\u00f3n efectiva para calcular la nota promedio de todos los estudiantes en base al mapa de estudiantes dado.",
-                "puntaje": 3.0
+                "razonamiento": "",
+                "puntaje": 0.0
             }
         }
     },
@@ -446,16 +446,16 @@
             "pregunta": "Teniendo un mapa de una ciudad, donde la clave es el nombre de la calle y el valor es el tipo de calle (residencial, comercial, etc.). \u00bfC\u00f3mo implementar\u00edas una funci\u00f3n para encontrar todas las calles comerciales?",
             "respuesta": "Para encontrar todas las calles comerciales recorrer\u00eda el mapa, revisando cada valor, si encuentro un valor de tipo comercial, significa que se encontr\u00f3 y se hace lo que quiera con el, as\u00ed sucesivamente. Si se quieren ir guardando en una lista, se guardan en una lista.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada no es correcta porque asume que los valores del mapa son cadenas de texto, cuando en realidad el enunciado menciona que el valor es el tipo de la calle. Por lo tanto, la funci\u00f3n tendr\u00eda que buscar aquellos pares clave-valor en el mapa donde el valor sea \"comercial\".",
-                "puntaje": 0.0
+                "razonamiento": "La respuesta proporcionada no aborda completamente la forma de implementar una funci\u00f3n para encontrar todas las calles comerciales en un mapa. Falta mencionar que se debe hacer una b\u00fasqueda de todas las claves que tengan un valor asociado de tipo 'comercial'",
+                "puntaje": 2.0
             },
             "claridad": {
-                "razonamiento": "La respuesta no es clara porque no indica c\u00f3mo se realizar\u00eda la b\u00fasqueda en el mapa ni c\u00f3mo se guardar\u00edan las calles comerciales en una lista.",
-                "puntaje": 1.0
+                "razonamiento": "La respuesta no es del todo clara, podr\u00eda ser m\u00e1s detallada y explicar mejor los pasos que se deben seguir para implementar la funci\u00f3n solicitada",
+                "puntaje": 2.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta no es relevante porque no aborda la pregunta de manera correcta ni proporciona una soluci\u00f3n adecuada para encontrar todas las calles comerciales en el mapa.",
-                "puntaje": 0.0
+                "razonamiento": "La respuesta es relevante ya que menciona que se debe recorrer el mapa y revisar cada valor. Sin embargo, no menciona expl\u00edcitamente c\u00f3mo se debe buscar espec\u00edficamente las calles comerciales utilizando los valores asociados a las claves",
+                "puntaje": 2.0
             }
         }
     },
@@ -466,15 +466,15 @@
             "pregunta": "\u00bfC\u00f3mo podr\u00edamos implementar una funci\u00f3n que tome una lista de palabras y retorne las palabras ordenadas de acuerdo a su longitud?",
             "respuesta": "No proporcionada",
             "correctitud": {
-                "razonamiento": "No proporcionada",
+                "razonamiento": "La respuesta no fue proporcionada",
                 "puntaje": 0.0
             },
             "claridad": {
-                "razonamiento": "No proporcionada",
+                "razonamiento": "La respuesta no fue proporcionada",
                 "puntaje": 0.0
             },
             "relevancia": {
-                "razonamiento": "No proporcionada",
+                "razonamiento": "La respuesta no fue proporcionada",
                 "puntaje": 0.0
             }
         }
@@ -484,17 +484,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "\u00bfC\u00f3mo implementar\u00eda una cola de prioridad para administrar las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico, donde los clientes VIP tienen la m\u00e1s alta prioridad, seguidos por los clientes habituales y luego los nuevos clientes?",
-            "respuesta": "para implementar la cola de prioridad (con mont\u00edculo binario), habr\u00eda que establecer la prioridad de los clientes vip, habituales y nuevos.\r\nlos vip tienen prioridad 3, si hay m\u00e1s de un cliente vip (todos los que existan), ser\u00e1n atendidos por el orden de llegada de su solicitud, el que haya enviado antes la solicitud ser\u00e1 el primer atendido de los que tengan prioridad 3.\r\nlos habituales tienen prioridad 2: ser\u00e1n atendidos por el orden de llegada de su solicitud, el que haya enviado antes la solicitud ser\u00e1 el primer atendido de los que tengan prioridad 2.\r\nlos nuevos tienen prioridad 1: ser\u00e1n atendidos por el orden de llegada de su solicitud, el que haya enviado antes la solicitud ser\u00e1 el primer atendido de los que tengan prioridad 1.\r\nPOR LO TANTO, se atender\u00edan todos los prioridad 3, luego todos los prioridad 2 y finalmente los prioridad 1",
+            "respuesta": "para implementar la cola de prioridad (con mont\u00edculo binario), habr\u00eda que establecer la prioridad de los clientes vip, habituales y nuevos.\r\n\r\nlos vip tienen prioridad 3, si hay m\u00e1s de un cliente vip (todos los que existan), ser\u00e1n atendidos por el orden de llegada de su solicitud, el que haya enviado antes la solicitud ser\u00e1 el primer atendido de los que tengan prioridad 3.\r\n\r\nlos habituales tienen prioridad 2: ser\u00e1n atendidos por el orden de llegada de su solicitud, el que haya enviado antes la solicitud ser\u00e1 el primer atendido de los que tengan prioridad 2.\r\n\r\nlos nuevos tienen prioridad 1: ser\u00e1n atendidos por el orden de llegada de su solicitud, el que haya enviado antes la solicitud ser\u00e1 el primer atendido de los que tengan prioridad 1.\r\n\r\nPOR LO TANTO, se atender\u00edan todos los prioridad 3, luego todos los prioridad 2 y finalmente los prioridad 1",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada explica c\u00f3mo implementar una cola de prioridad para administrar las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico, donde los clientes VIP tienen la m\u00e1s alta prioridad. La respuesta propone el uso de un mont\u00edculo binario para implementar la cola de prioridad. Luego, establece las prioridades asignadas a los clientes VIP, habituales y nuevos. Adem\u00e1s, describe c\u00f3mo atender a los clientes en orden de prioridad y por orden de llegada dentro de cada grupo de clientes con la misma prioridad. Por lo tanto, la respuesta es correcta en su enfoque y proporciona una soluci\u00f3n adecuada para el problema planteado",
+                "razonamiento": "La respuesta muestra correctamente c\u00f3mo establecer una cola de prioridad utilizando un mont\u00edculo binario. Describe c\u00f3mo asignar diferentes prioridades a los clientes VIP, habituales y nuevos, y c\u00f3mo atenderlos en el orden correcto.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y concisa. Explica paso a paso c\u00f3mo implementar la cola de prioridad y c\u00f3mo se deben atender los clientes seg\u00fan su prioridad. La organizaci\u00f3n y estructura de la respuesta facilitan la comprensi\u00f3n de la soluci\u00f3n propuesta. No hay ambig\u00fcedad en la explicaci\u00f3n. Por lo tanto, la respuesta es clara en su presentaci\u00f3n",
+                "razonamiento": "La respuesta es clara y proporciona una descripci\u00f3n paso a paso de c\u00f3mo implementar la cola de prioridad, estableciendo las prioridades de los diferentes tipos de clientes y el orden de atenci\u00f3n.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante para la pregunta planteada. Proporciona una soluci\u00f3n espec\u00edfica para el problema de implementar una cola de prioridad para administrar las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico. La propuesta de prioridades y el m\u00e9todo de atenci\u00f3n se ajustan al caso dado. Por lo tanto, la respuesta es relevante para el contexto de la pregunta",
+                "razonamiento": "La respuesta es relevante y responde directamente a la pregunta planteada. Proporciona una soluci\u00f3n adecuada para administrar las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico utilizando una cola de prioridad.",
                 "puntaje": 3.0
             }
         }
@@ -504,18 +504,18 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "\u00bfC\u00f3mo podr\u00edamos implementar una funci\u00f3n que tome una lista de palabras y retorne las palabras ordenadas de acuerdo a su longitud? (use TDAs y no algoritmos de ordenamiento)",
-            "respuesta": "Para implementar una funci\u00f3n que tome una lista de palabras y retorne las palabras ordenadas de acuerdo con su longitud puede ser de la siguiente manera:\n\n- Comienza recorriendo la lista de palabra.\n\n- Para calcular la longitud de la palabra, se debe recorrer toda la palabra hasta encontrar un salto de l\u00ednea y el valor debe ser guardado una variable numLongiutd.\n\n- Se crea un mapa ordenada para guardar las palabras como clave y que su longitud sea el valor.\n\nY para retornar se recorre el mapa ordenado.\n",
+            "respuesta": "Para implementar una funci\u00f3n que tome un lista de palabras y retorne las palabras ordenadas de acuerdo con su longitud puede ser de la siguiente manera:\n\n- Comienza recorriendo la lista de palabra.\n\n- Para calcular la longitud de la palabra, se debe recorrer toda la palabra hasta encontrar un salto de l\u00ednea y el valor debe ser guardado en una variable llamada numLongitud.\n\n- Se crea un mapa ordenado para guardar las palabras como clave y que su longitud sea el valor.\n\n- Para retornar, se recorre el mapa ordenado.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada no es correcta, ya que sugiere crear un mapa ordenado, pero no indica c\u00f3mo implementar el mapa ni c\u00f3mo realizar la ordenaci\u00f3n.",
-                "puntaje": 0.0
+                "razonamiento": "La respuesta proporcionada indica una forma correcta de implementar la funci\u00f3n solicitada. Explica c\u00f3mo recorrer la lista de palabras, calcular la longitud de cada palabra y guardarla en un mapa ordenado. Tambi\u00e9n menciona c\u00f3mo retornar las palabras ordenadas seg\u00fan su longitud. Sin embargo, no incluye el c\u00f3digo de la funci\u00f3n ni menciona qu\u00e9 TDA espec\u00edfico utilizar para implementar el mapa ordenado. A pesar de esto, la soluci\u00f3n propuesta es correcta en t\u00e9rminos de l\u00f3gica.",
+                "puntaje": 2.0
             },
             "claridad": {
-                "razonamiento": "La respuesta proporcionada es algo confusa debido a la falta de explicaci\u00f3n detallada sobre c\u00f3mo implementar la funci\u00f3n y las estructuras necesarias.",
-                "puntaje": 1.0
+                "razonamiento": "La respuesta es clara en su estructura y presenta los pasos necesarios para implementar la funci\u00f3n solicitada. Sin embargo, podr\u00eda mejorar al incluir ejemplos o pseudoc\u00f3digo que ilustren mejor la soluci\u00f3n propuesta.",
+                "puntaje": 2.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta no es relevante, ya que no proporciona una soluci\u00f3n adecuada para el problema planteado.",
-                "puntaje": 0.0
+                "razonamiento": "La respuesta es relevante ya que proporciona una soluci\u00f3n adecuada a la pregunta planteada. Ordenar palabras seg\u00fan su longitud es una tarea com\u00fan en programaci\u00f3n y la soluci\u00f3n propuesta cumple con ese objetivo.",
+                "puntaje": 3.0
             }
         }
     },
@@ -524,17 +524,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Imagina que tienes un mapa con las calificaciones de los estudiantes, donde la clave es el nombre del estudiante y el valor es su calificaci\u00f3n. \u00bfC\u00f3mo podr\u00edas implementar una funci\u00f3n para encontrar a todos los estudiantes que aprobaron (calificaci\u00f3n mayor a 5)?",
-            "respuesta": "Para implementar una funci\u00f3n que encuentre a todos los estudiantes que aprobaron, se podr\u00eda crear una lista que contendr\u00e1 el nombre de todas las personas que aprobaron (calificaci\u00f3n mayor a 5). En esta funci\u00f3n se le pasa el mapa y se va revisando si los estudiantes aprobaron o no, dependiendo de la calificaci\u00f3n que tienen en su mapa. Los estudiantes que tienen una calificaci\u00f3n mayor a 5 se guarda el nombre en la lista. Al final de la funci\u00f3n vamos a tener una lista llena de los nombres de los alumnos que aprobaron el ramo o la prueba.",
+            "respuesta": "La respuesta proporcionada es adecuada. Propone crear una lista que guarde los nombres de los estudiantes que aprobaron, y recorrer el mapa de calificaciones para verificar si la calificaci\u00f3n es mayor a 5. Si es as\u00ed, se agrega el nombre del estudiante a la lista. Al final de la funci\u00f3n, se tiene una lista con los nombres de los estudiantes que aprobaron.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta porque describe el proceso adecuado para encontrar a los estudiantes que aprobaron, utilizando un mapa como estructura de datos. Explica c\u00f3mo se recorre el mapa y se verifica si cada estudiante aprob\u00f3 o no bas\u00e1ndose en su calificaci\u00f3n. Adem\u00e1s, menciona c\u00f3mo se almacenan los nombres de los estudiantes que aprobaron en una lista separada.",
+                "razonamiento": "La respuesta propuesta utiliza un enfoque correcto para encontrar a los estudiantes que aprobaron. Recorre el mapa de calificaciones y utiliza una condici\u00f3n para determinar si la calificaci\u00f3n es mayor a 5. Adem\u00e1s, utiliza una lista para almacenar los nombres de los estudiantes que aprobaron.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Se explica paso a paso c\u00f3mo se implementar\u00eda la funci\u00f3n y c\u00f3mo se obtendr\u00eda la lista con los nombres de los estudiantes que aprobaron. No hay ambig\u00fcedad en la explicaci\u00f3n y utiliza un lenguaje claro y conciso.",
+                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Explica de manera concisa c\u00f3mo implementar la funci\u00f3n para encontrar a los estudiantes que aprobaron utilizando un mapa de calificaciones y una lista para almacenar los nombres.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta planteada. Proporciona una soluci\u00f3n espec\u00edfica para encontrar a los estudiantes que aprobaron en un mapa de calificaciones. Adem\u00e1s, se explica c\u00f3mo se guarda el nombre de los estudiantes que aprobaron en una lista separada, lo cual es relevante para completar la tarea solicitada.",
+                "razonamiento": "La respuesta es relevante ya que aborda de manera directa la pregunta planteada sobre c\u00f3mo implementar una funci\u00f3n para encontrar a los estudiantes que aprobaron utilizando un mapa de calificaciones. Adem\u00e1s, proporciona una soluci\u00f3n adecuada y bien explicada.",
                 "puntaje": 3.0
             }
         }
@@ -543,18 +543,18 @@
         "student_id": "SOLIS PI\u00d1ONES",
         "evaluation": {
             "estructura": "Desconocido",
-            "pregunta": "\u00bfC\u00f3mo podr\u00edamos implementar una funci\u00f3n que tome una lista de palabras y retorne las palabras ordenadas de acuerdo a su longitud? (use TDAs y no algoritmos de ordenamiento)",
+            "pregunta": "C\u00f3mo podr\u00edamos implementar una funci\u00f3n que tome una lista de palabras y retorne las palabras ordenadas de acuerdo a su longitud?",
             "respuesta": "Para realizar esto se puede usar un monticulo minimo. Primero se reocorre la lista y se calcula la longitud de la palabra con una funcion que cuente los caracteres de cada una, despues se ingresa la palabara y su longitud al monticulo (la prioridad es la longitud). Luego ingresar todas las palabras se va sacando la raiz del monticulo e imprimiendo la palabra, hasta que no hayan mas datos en el monticulo, de esta forma se  mostraran ordenadas (de menor a mayor caracteres).",
             "correctitud": {
-                "razonamiento": "La respuesta propuesta proporciona una soluci\u00f3n correcta para el problema planteado. Se utiliza un mont\u00edculo m\u00ednimo para ordenar las palabras seg\u00fan su longitud, lo cual cumple con el requisito de no utilizar algoritmos de ordenamiento. Adem\u00e1s, se menciona la necesidad de recorrer la lista y contar los caracteres de cada palabra para obtener su longitud.",
+                "razonamiento": "La respuesta proporciona un enfoque correcto para solucionar el problema planteado, utilizando un mont\u00edculo m\u00ednimo para ordenar las palabras por longitud.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Se explica de manera concisa el proceso para implementar la funci\u00f3n y se mencionan los pasos necesarios para lograrlo.",
+                "razonamiento": "La respuesta es clara en su explicaci\u00f3n sobre c\u00f3mo implementar la funci\u00f3n a trav\u00e9s del uso de un mont\u00edculo m\u00ednimo y la explicaci\u00f3n paso a paso de la l\u00f3gica.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es altamente relevante ya que proporciona una soluci\u00f3n directa y adecuada al problema planteado. El uso de un mont\u00edculo m\u00ednimo para ordenar las palabras por longitud es una estrategia eficiente y eficaz.",
+                "razonamiento": "La respuesta es relevante ya que proporciona una soluci\u00f3n que utiliza una estructura de datos espec\u00edfica, el mont\u00edculo m\u00ednimo, para ordenar las palabras seg\u00fan su longitud.",
                 "puntaje": 3.0
             }
         }
@@ -564,17 +564,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "\u00bfC\u00f3mo implementar\u00eda una cola de prioridad para administrar las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico, donde los clientes VIP tienen la m\u00e1s alta prioridad, seguidos por los clientes habituales y luego los nuevos clientes?",
-            "respuesta": "Podemos crear una estructura para clasificar al cliente por nombre y su estatus, osea VIP, cliente habitual y cliente nuevo. Luego los elementos de la cola con prioridad se implementar\u00e1n utilizando un mont\u00edculo binario, donde cada elemento de la cola tiene un valor de prioridad asociado al estatus del cliente.\n\nEl mont\u00edculo binario se encarga de ordenar la cola con prioridad, y luego para administrar las solicitudes, basta con extraer el primer elemento de la cola, que ser\u00e1n los VIP en primer lugar.",
+            "respuesta": "Podemos crear una estructura para clasificar al cliente por nombre y su estatus, osea VIP, cliente habitual y cliente nuevo.\nLuego los elementos de la cola con prioridad se implementar\u00e1n utilizando un mont\u00edculo binario, donde cada elemento de la cola tiene un valor de prioridad asociado al estatus del cliente.\n\nEl mont\u00edculo binario se encarga de ordenar la cola con prioridad, y luego para administrar las solicitudes, basta con extraer el primer elemento de la cola, que ser\u00e1n los VIP en primer lugar.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta porque propone el uso de una estructura de datos llamada mont\u00edculo binario para implementar la cola de prioridad. Adem\u00e1s, menciona que se pueden clasificar a los clientes seg\u00fan su estatus en VIP, cliente habitual y cliente nuevo, lo cual es necesario para asignar la prioridad adecuada a cada solicitud.",
+                "razonamiento": "La respuesta propuesta es correcta, ya que sugiere el uso de una estructura de datos espec\u00edfica (mont\u00edculo binario) para implementar la cola de prioridad y tambi\u00e9n menciona la asociaci\u00f3n entre el valor de prioridad y el estatus del cliente.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Explica de forma concisa c\u00f3mo se implementar\u00eda la cola de prioridad utilizando un mont\u00edculo binario y c\u00f3mo se clasificar\u00edan los clientes seg\u00fan su estatus.",
+                "razonamiento": "La respuesta proporcionada es clara y f\u00e1cil de entender. Describe de manera precisa el proceso de implementaci\u00f3n de la cola de prioridad utilizando un mont\u00edculo binario.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que proporciona una soluci\u00f3n adecuada para implementar una cola de prioridad en un sistema de soporte t\u00e9cnico, teniendo en cuenta los diferentes niveles de prioridad de los clientes.",
+                "razonamiento": "La respuesta es relevante, ya que aborda directamente la pregunta y propone una soluci\u00f3n adecuada para implementar una cola de prioridad en el escenario planteado.",
                 "puntaje": 3.0
             }
         }
@@ -584,17 +584,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Suponga que tiene un conjunto de operaciones a realizar, cada una con un tiempo de duraci\u00f3n diferente. \u00bfC\u00f3mo podr\u00eda usar una cola de prioridad para ordenar las operaciones de manera que se realicen primero las m\u00e1s cortas?",
-            "respuesta": "Podemos implementar un mont\u00edculo binario de m\u00ednimos, donde en la ra\u00edz se ira guardando aquella de operaci\u00f3n que tenga el menor tiempo de duraci\u00f3n. Lo que ordenar\u00eda las operaciones de forma satisfactoria a lo pedido. (Ordenar las operaciones de manera que se realicen primo las m\u00e1s cortas).",
+            "respuesta": "Podemos implementar un mont\u00edculo binario de m\u00ednimos, donde en la ra\u00edz se ira guardando aquella de operaci\u00f3n que tenga el menor tiempo de duraci\u00f3n. Lo que ordenar\u00eda las operaciones de forma satisfactoria a lo pedido. (Ordenar las operaciones de manera que se realicen primero las m\u00e1s cortas).",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta porque propone el uso de un mont\u00edculo binario de m\u00ednimos para implementar una cola de prioridad, donde se almacenar\u00e1n las operaciones con el menor tiempo de duraci\u00f3n en la ra\u00edz para garantizar que se realicen primero las m\u00e1s cortas. Esta es una soluci\u00f3n adecuada para ordenar las operaciones seg\u00fan su tiempo de duraci\u00f3n.",
+                "razonamiento": "La respuesta es correcta. Utilizar un mont\u00edculo binario de m\u00ednimos es una forma adecuada de implementar una cola de prioridad donde se realicen primero las operaciones m\u00e1s cortas.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y concisa. Se explica c\u00f3mo se puede utilizar una cola de prioridad implementada con un mont\u00edculo binario de m\u00ednimos para ordenar las operaciones seg\u00fan su tiempo de duraci\u00f3n.",
+                "razonamiento": "La respuesta es clara y concisa. Se entiende perfectamente c\u00f3mo se utilizar\u00e1 una cola de prioridad para ordenar las operaciones seg\u00fan su tiempo de duraci\u00f3n.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta y propone una soluci\u00f3n adecuada utilizando una cola de prioridad para ordenar las operaciones seg\u00fan su tiempo de duraci\u00f3n.",
+                "razonamiento": "La respuesta es relevante ya que proporciona una soluci\u00f3n espec\u00edfica para el problema planteado, utilizando una estructura de datos adecuada.",
                 "puntaje": 3.0
             }
         }
@@ -604,17 +604,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Imagina que tienes un mapa con las calificaciones de los estudiantes, donde la clave es el nombre del estudiante y el valor es su calificaci\u00f3n. \u00bfC\u00f3mo podr\u00edas implementar una funci\u00f3n para encontrar a todos los estudiantes que aprobaron (calificaci\u00f3n mayor a 5)?",
-            "respuesta": "Podr\u00eda implementar una funci\u00f3n que al momento de recorrer el mapa que se encontrar\u00edan los estudiantes y sus calificaci\u00f3n, usar un tipo de condici\u00f3n, que pudiese ser un if y crear un tipo de selecci\u00f3n o filtro que si la calificaci\u00f3n es mayor o igual a 5  se imprima la clave, que en este caso estar\u00eda correspondiendo al nombre del estudiante, y asi pudiendo mostrar solo los estudiantes que tienen respectiva calificaci\u00f3n.",
+            "respuesta": "Podr\u00eda implementar una funci\u00f3n que al momento de recorrer el mapa que se encontrar\u00edan los estudiantes y sus calificaci\u00f3n, usar un tipo de condici\u00f3n, que pudiese ser un if y crear un tipo de selecci\u00f3n o filtro que si la calificaci\u00f3n es mayor o igual a 5  se imprima la clave, que en este caso estar\u00eda correspondiendo al nombre del estudiante, y as\u00ed pudiendo mostrar solo los estudiantes que tienen respectiva calificaci\u00f3n.",
             "correctitud": {
-                "razonamiento": "La respuesta propuesta es correcta porque indica c\u00f3mo implementar una funci\u00f3n que encuentre a todos los estudiantes que aprobaron, usando la condici\u00f3n de que la calificaci\u00f3n sea mayor a 5. Adem\u00e1s, menciona que se debe imprimir la clave correspondiente al nombre del estudiante, lo cual es relevante para la soluci\u00f3n del problema.",
+                "razonamiento": "La respuesta proporcionada es correcta ya que menciona la implementaci\u00f3n de una condici\u00f3n que eval\u00faa si la calificaci\u00f3n es mayor o igual a 5, y si cumple con esa condici\u00f3n se imprime el nombre del estudiante. Esto permitir\u00e1 encontrar a todos los estudiantes que aprobaron.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Se explica de manera concisa c\u00f3mo se puede implementar la funci\u00f3n para encontrar a los estudiantes que aprobaron.",
+                "razonamiento": "La respuesta es clara y concisa. Describe la implementaci\u00f3n de manera sencilla y f\u00e1cil de entender.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que indica c\u00f3mo resolver el problema planteado en la pregunta. Proporciona una soluci\u00f3n adecuada y espec\u00edfica para encontrar a los estudiantes que aprobaron.",
+                "razonamiento": "La respuesta proporciona una soluci\u00f3n adecuada a la pregunta planteada. La implementaci\u00f3n propuesta permite encontrar a todos los estudiantes que aprobaron, que es el objetivo solicitado.",
                 "puntaje": 3.0
             }
         }
@@ -626,15 +626,15 @@
             "pregunta": "Imagina que tienes un mapa con las calificaciones de los estudiantes, donde la clave es el nombre del estudiante y el valor es su calificaci\u00f3n. \u00bfC\u00f3mo podr\u00edas implementar una funci\u00f3n para encontrar a todos los estudiantes que aprobaron (calificaci\u00f3n mayor a 5)?",
             "respuesta": "Primeramente deberia recorrer el mapa desde el inicio, y por cada par encontrado en el mapa revisaria si su clave que representa la calificacion del estudiante es mayor a 5, si es que se cumple en caso de ser necesario se podria almacenar el nombre del estudiante en un lista o dependiendo de lo que se quiera hacer con los estudiantes aprobados.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta ya que plantea recorrer el mapa y evaluar si la calificaci\u00f3n del estudiante es mayor a 5, y en caso afirmativo, se puede almacenar el nombre del estudiante en una lista u otro contenedor. Esto cumplir\u00eda con el objetivo de encontrar a todos los estudiantes que aprobaron.",
+                "razonamiento": "La respuesta proporcionada describe correctamente el proceso para encontrar a todos los estudiantes que aprobaron en base a sus calificaciones.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Describe el proceso de manera precisa y concisa, utilizando un lenguaje sencillo. No se generan confusiones o ambig\u00fcedades.",
+                "razonamiento": "La respuesta es clara y concisa, utilizando un lenguaje sencillo y comprensible.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que aborda directamente el problema planteado. Proporciona una soluci\u00f3n espec\u00edfica y adecuada a la pregunta, sin desviarse ni incluir informaci\u00f3n innecesaria. Cumple con el objetivo de encontrar a los estudiantes que aprobaron en base a su calificaci\u00f3n.",
+                "razonamiento": "La respuesta es relevante ya que cumple con el objetivo de encontrar a los estudiantes que aprobaron.",
                 "puntaje": 3.0
             }
         }
@@ -644,18 +644,18 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Describa c\u00f3mo se puede utilizar un conjunto o mapa para verificar si una lista tiene elementos duplicados.",
-            "respuesta": "primero al momento de insertar el primer elemento en la lista se va guardando tambi\u00e9n en un mapa(caso de ser el primer elemento se crea el mapa y el primer elemento de este es el primer elemento de la lista). al momento de ingresar un nuevo elemento se busca ese elemento dentro del mapa de encontrarse un choque de keys se da el aviso de que el elemento se encuentra duplicado",
+            "respuesta": "No proporcionada",
             "correctitud": {
-                "razonamiento": "La respuesta proporciona una estrategia correcta para utilizar un conjunto o mapa para verificar duplicados en una lista. Explica c\u00f3mo se guarda cada elemento de la lista en el mapa y c\u00f3mo se busca si hay colisiones de claves para determinar si hay elementos duplicados.",
-                "puntaje": 3.0
+                "razonamiento": "No se proporcion\u00f3 una respuesta para evaluar su correctitud.",
+                "puntaje": 0.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Describe claramente el paso a paso de c\u00f3mo se utiliza el conjunto o mapa para verificar duplicados en una lista.",
-                "puntaje": 3.0
+                "razonamiento": "No se proporcion\u00f3 una respuesta, por lo que la claridad no se puede evaluar.",
+                "puntaje": 0.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que proporciona una soluci\u00f3n adecuada para el problema planteado. Utilizar un conjunto o mapa es una buena opci\u00f3n para verificar duplicados en una lista.",
-                "puntaje": 3.0
+                "razonamiento": "No se proporcion\u00f3 una respuesta, por lo que la relevancia no se puede evaluar.",
+                "puntaje": 0.0
             }
         }
     },
@@ -666,15 +666,15 @@
             "pregunta": "En una cola con prioridad, los elementos con la misma prioridad son procesados en orden aleatorio",
             "respuesta": "No proporcionada",
             "correctitud": {
-                "razonamiento": "La respuesta no fue proporcionada, por lo tanto no se puede evaluar la correctitud.",
+                "razonamiento": "La respuesta no fue proporcionada, por lo que no se puede evaluar su correctitud.",
                 "puntaje": 0.0
             },
             "claridad": {
-                "razonamiento": "La respuesta no fue proporcionada, por lo tanto no se puede evaluar la claridad.",
+                "razonamiento": "La respuesta no fue proporcionada, por lo que no se puede evaluar su claridad.",
                 "puntaje": 0.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta no fue proporcionada, por lo tanto no se puede evaluar la relevancia.",
+                "razonamiento": "La respuesta no fue proporcionada, por lo que no se puede evaluar su relevancia.",
                 "puntaje": 0.0
             }
         }
@@ -686,15 +686,15 @@
             "pregunta": "Teniendo un mapa de estudiantes donde la clave es el n\u00famero de matr\u00edcula y el valor es la nota final. \u00bfC\u00f3mo podr\u00edas calcular la nota promedio de todos los estudiantes?",
             "respuesta": "Primero habr\u00eda que recorrer el mapa e ir sumando el valor que en este caso seria la nota final, al final de el algoritmo habr\u00eda que simplemente dividir el resultado final por la cantidad de estudiantes que hay en el mapa, que se podr\u00eda ocupar un contador cada vez que se agregue una nota final.",
             "correctitud": {
-                "razonamiento": "La respuesta propuesta es correcta. Sugiere sumar todas las notas finales para luego dividirlas por la cantidad total de estudiantes, utilizando un contador para llevar la cuenta.",
+                "razonamiento": "La respuesta proporcionada es correcta, ya que propone recorrer el mapa acumulando la suma de las notas finales de los estudiantes, para luego dividir el resultado por la cantidad de estudiantes.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y precisa. Explica de manera concisa c\u00f3mo calcular la nota promedio de todos los estudiantes utilizando un mapa.",
+                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Explica de manera sencilla el procedimiento para calcular la nota promedio de todos los estudiantes.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que proporciona una soluci\u00f3n adecuada al problema planteado. Calcula correctamente la nota promedio de todos los estudiantes utilizando un mapa.",
+                "razonamiento": "La respuesta es muy relevante, ya que aborda directamente c\u00f3mo calcular la nota promedio de todos los estudiantes utilizando la estructura de datos mencionada.",
                 "puntaje": 3.0
             }
         }
@@ -704,17 +704,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Suponga que tiene un conjunto de operaciones a realizar, cada una con un tiempo de duraci\u00f3n diferente. \u00bfC\u00f3mo podr\u00eda usar una cola de prioridad para ordenar las operaciones de manera que se realicen primero las m\u00e1s cortas?",
-            "respuesta": "Primero podr\u00edamos usar una cola de prioridad m\u00ednima, lo que permite que ordenemos las distintas operaciones seg\u00fan el tiempo que se realicen. Como en este caso piden el tiempo m\u00e1s corto, ser\u00eda la primera operaci\u00f3n en realizarse.",
+            "respuesta": "Primero podriamos usar una cola de prioridad minima, lo que permite que ordenemos las distintas operacion segun el tiempo que se realicen, como en este caso piden el tiempo mas corto seria la primera operacion en realizarse",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta. Explica correctamente que se puede usar una cola de prioridad m\u00ednima para ordenar las operaciones seg\u00fan el tiempo de duraci\u00f3n. Al utilizar una cola de prioridad m\u00ednima, la operaci\u00f3n con el menor tiempo de duraci\u00f3n se colocar\u00eda en el frente de la cola y se realizar\u00eda primero.",
+                "razonamiento": "La respuesta es correcta, ya que menciona el uso de una cola de prioridad minima para ordenar las operaciones seg\u00fan su tiempo de duraci\u00f3n.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Se utiliza un lenguaje sencillo y se explica de manera concisa c\u00f3mo se podr\u00eda usar una cola de prioridad m\u00ednima para ordenar las operaciones por tiempo de duraci\u00f3n.",
+                "razonamiento": "La respuesta es clara y f\u00e1cil de entender, explica de manera concisa c\u00f3mo se puede utilizar una cola de prioridad minima para ordenar las operaciones.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que responde directamente a la pregunta planteada. Proporciona una soluci\u00f3n adecuada al problema de ordenar las operaciones seg\u00fan el tiempo de duraci\u00f3n utilizando una cola de prioridad m\u00ednima.",
+                "razonamiento": "La respuesta es relevante, ya que responde directamente a la pregunta planteada y explica c\u00f3mo se puede utilizar la estructura en cuesti\u00f3n para resolver el problema.",
                 "puntaje": 3.0
             }
         }
@@ -724,17 +724,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Tenemos una lista de personas con su nombre y pa\u00eds de origen. \u00bfC\u00f3mo podr\u00edamos agrupar a las personas por pa\u00eds utilizando un mapa?",
-            "respuesta": "Primero, nos preguntamos qu\u00e9 pa\u00eds queremos guardar en el mapa, para luego empezar a recorrer cada uno de los elementos, donde cuando los encuentre, los borrar\u00e1 de la lista para posteriormente mejorar la b\u00fasqueda de usuarios que cumplan con el requisito y los ingresar\u00e1 a una nueva lista, exclusiva del pa\u00eds, donde dicha lista ser\u00e1 ingresada a un mapa, donde, en el mapa, el primer pa\u00eds que escogimos ser\u00e1 ingresado primero y as\u00ed sucesivamente.",
+            "respuesta": "Primero, nos preguntamos que pa\u00eds queremos guardar en el mapa, para luego empezar a recorrer cada uno de los elementos, donde cuando los encuentre, los borrar\u00e1 de la lista para posteriormente mejorar la b\u00fasqueda de usuarios que cumplan con el requisito y los ingresar\u00e1 a una nueva lista, exclusiva del pa\u00eds, donde dicha lista, ser\u00e1 ingresada a un mapa, donde, en el mapa, el primer pa\u00eds que escogimos ser\u00e1 ingresado primero y as\u00ed sucesivamente.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada no aborda directamente el uso de un mapa para agrupar a las personas por pa\u00eds. Adem\u00e1s, el proceso descrito de buscar y borrar elementos de la lista original y crear nuevas listas no es eficiente ni necesario para lograr el objetivo.",
+                "razonamiento": "La respuesta proporcionada no es correcta ya que no menciona el uso de un mapa para agrupar a las personas por pa\u00eds, sino que propone recorrer la lista y copiar los elementos que cumplen con el pa\u00eds escogido en una nueva lista.",
                 "puntaje": 0.0
             },
             "claridad": {
-                "razonamiento": "La respuesta tiene un lenguaje confuso y poco claro. No se explica claramente c\u00f3mo se utilizar\u00e1 el mapa ni c\u00f3mo se agregar\u00e1n las personas agrupadas por pa\u00eds.",
+                "razonamiento": "La respuesta proporcionada es confusa y no explica claramente c\u00f3mo utilizar un mapa para agrupar a las personas por pa\u00eds. Adem\u00e1s, utiliza t\u00e9rminos generales y ambiguos que dificultan la comprensi\u00f3n de la soluci\u00f3n propuesta.",
                 "puntaje": 0.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta proporcionada no responde directamente a la pregunta y no aborda el uso de un mapa para agrupar a las personas por pa\u00eds. No es relevante para el tema de la pregunta.",
+                "razonamiento": "La respuesta no es relevante ya que no responde adecuadamente a la pregunta planteada. Se espera una explicaci\u00f3n sobre c\u00f3mo utilizar un mapa para agrupar a las personas por pa\u00eds.",
                 "puntaje": 0.0
             }
         }
@@ -746,15 +746,15 @@
             "pregunta": "Tenemos una lista de productos con su precio y categor\u00eda. \u00bfC\u00f3mo podr\u00edamos calcular el precio promedio por categor\u00eda usando un mapa?",
             "respuesta": "Se crea un mapa en donde las claves ser\u00edan las categorias y en los valores se ir\u00edan acumulando la suma de los precios y la cantidad de productos por categoria. Al terminar de rellenar el mapa se deber\u00e1 ir calculando el precio promedio por categoria gracias a que tenemos la suma de precios totales y la cantidad de productos por categoria. Finalmente se almacena en el mismo mapa, para asi poder acceder a trav\u00e9s del nombre de la categor\u00eda.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta. Proporciona una estrategia clara y precisa para calcular el precio promedio por categor\u00eda usando un mapa.",
+                "razonamiento": "La respuesta proporciona una estrategia correcta para calcular el precio promedio por categor\u00eda usando un mapa. Se propone utilizar un mapa con las categor\u00edas como claves y acumular la suma de los precios y la cantidad de productos por categor\u00eda como valores.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Explica de manera concisa la estrategia a seguir.",
+                "razonamiento": "La respuesta es clara y proporciona una estrategia paso a paso para calcular el precio promedio por categor\u00eda utilizando un mapa.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que est\u00e1 directamente relacionada con la pregunta y proporciona una soluci\u00f3n adecuada al problema planteado.",
+                "razonamiento": "La respuesta es relevante ya que proporciona una estrategia adecuada para el c\u00e1lculo del precio promedio por categor\u00eda utilizando un mapa, que es lo que se solicita en la pregunta.",
                 "puntaje": 3.0
             }
         }
@@ -762,19 +762,19 @@
     {
         "student_id": "LARA ARCE",
         "evaluation": {
-            "estructura": "Desconocido",
+            "estructura": "Cola de prioridad",
             "pregunta": "Considere un conjunto de estudiantes con sus respectivas calificaciones. \u00bfC\u00f3mo podr\u00eda usar una cola de prioridad para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas?",
             "respuesta": "Se guardan los estudiantes en la estructura (mont\u00edculo binario por m\u00ednimos por ejemplo), y dependiendo de la nota que tengan tienen m\u00e1s o menos prioridad, si queremos guardar a los 5 mejores, simplemente los que tengan un 7.0 de calificaci\u00f3n tendr\u00e1n prioridad 1, (la m\u00e1s alta) mientras m\u00e1s baja la nota, menos prioridad tendr\u00e1n, por lo que para identificar los 5 mejores recorremos la cola y mostramos los 5 elementos con la prioridad m\u00e1s alta.",
             "correctitud": {
-                "razonamiento": "La respuesta proporciona un enfoque correcto para usar una cola de prioridad para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas. Propone utilizar un mont\u00edculo binario por m\u00ednimos para almacenar a los estudiantes y asignarles prioridad en funci\u00f3n de sus calificaciones. Adem\u00e1s, menciona que los estudiantes con una calificaci\u00f3n de 7.0 tendr\u00edan la prioridad m\u00e1s alta. Por \u00faltimo, propone recorrer la cola de prioridad y mostrar los 5 estudiantes con la prioridad m\u00e1s alta.",
+                "razonamiento": "La respuesta proporcionada es correcta ya que explica correctamente c\u00f3mo se puede utilizar una cola de prioridad para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas. Se menciona que se pueden guardar a los estudiantes en una estructura de mont\u00edculo binario por m\u00ednimos, donde la prioridad se asigna seg\u00fan la nota obtenida. Adem\u00e1s, se menciona que se podr\u00edan recorrer los 5 elementos con mayor prioridad para identificar a los 5 estudiantes con las calificaciones m\u00e1s altas.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Explica de manera concisa c\u00f3mo utilizar una cola de prioridad para identificar a los 5 estudiantes con las calificaciones m\u00e1s altas. Proporciona detalles sobre c\u00f3mo los estudiantes son almacenados en la cola de prioridad, c\u00f3mo se asigna la prioridad en funci\u00f3n de las calificaciones y c\u00f3mo se recuperan los 5 estudiantes con la prioridad m\u00e1s alta.",
+                "razonamiento": "La respuesta proporcionada es clara y f\u00e1cil de entender. Se explican de manera concisa los pasos a seguir para utilizar la cola de prioridad y se utiliza un lenguaje t\u00e9cnico adecuado.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta planteada sobre el uso de una cola de prioridad para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas. Proporciona un enfoque espec\u00edfico y aplicable utilizando un mont\u00edculo binario por m\u00ednimos y explicando c\u00f3mo se asigna la prioridad en funci\u00f3n de las calificaciones de los estudiantes.",
+                "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta planteada y proporciona una soluci\u00f3n adecuada utilizando una cola de prioridad.",
                 "puntaje": 3.0
             }
         }
@@ -784,17 +784,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Considere un conjunto de estudiantes con sus respectivas calificaciones. \u00bfC\u00f3mo podr\u00eda usar una cola de prioridad para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas?",
-            "respuesta": "se har\u00e1 una struct que tendr\u00e1 el estudiantes y su calificaci\u00f3n , ser\u00e1n insertados en un mont\u00edculo que su capacidad ser\u00e1 5 y seguir\u00e1 las reglas de estar ordenado de mayor a menor, en la ultima posici\u00f3n del mont\u00edculo estar\u00e1 la nota mas baja de las 5 mas altas, y cuando se compare otro estudiante si su calificaci\u00f3n es mayor q la ultima del mont\u00edculo, se cambia el top por la ultima posicion,se hace un pop y se inserta el nuevo estudiante con su calificaci\u00f3n, el mont\u00edculo se volver\u00e1 a ordenar, as\u00ed estar\u00e1 las 5 notas mas altas",
+            "respuesta": "se har\u00e1 una struct que tendr\u00e1 el estudiantes y su calificaci\u00f3n , ser\u00e1n insertados en un mont\u00edculo que su capacidad ser\u00e1 5 y seguir\u00e1 las reglas de estar ordenado de mayor a menor, en la ultima posici\u00f3n del mont\u00edculo estar\u00e1 la nota mas baja de las 5 mas altas, y cuando se compare otro estudiante si su calificaci\u00f3n es mayor q la ultima del mont\u00edculo, se cambia el top por la ultima posicion,se hace un pop y se inserta el nuevo estudiante con su calificaci\u00f3n, el mont\u00edculo se volver\u00e1 a ordenar, as\u00ed estar\u00e1 las 5 notas mas altas ",
             "correctitud": {
-                "razonamiento": "El razonamiento explica correctamente c\u00f3mo utilizar una cola de prioridad para identificar a los 5 estudiantes con las calificaciones m\u00e1s altas. Utiliza un mont\u00edculo con capacidad de 5 y lo mantiene ordenado de mayor a menor. Adem\u00e1s, menciona c\u00f3mo se realiza la inserci\u00f3n y actualizaci\u00f3n del mont\u00edculo.",
+                "razonamiento": "La respuesta proporcionada explica correctamente c\u00f3mo se puede usar una cola de prioridad para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas. Describe el proceso de insertar a los estudiantes con sus calificaciones en un mont\u00edculo, manteniendo las reglas de ordenado de mayor a menor. Tambi\u00e9n menciona c\u00f3mo se actualiza el mont\u00edculo cuando se encuentra un estudiante con una calificaci\u00f3n mayor que la calificaci\u00f3n m\u00e1s baja en el mont\u00edculo.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Se explica detalladamente el proceso de uso de una cola de prioridad y c\u00f3mo se realizan las actualizaciones en el mont\u00edculo para mantener las 5 calificaciones m\u00e1s altas.",
+                "razonamiento": "La respuesta proporcionada es clara y f\u00e1cil de entender. Explica de manera concisa c\u00f3mo usar una cola de prioridad para encontrar a los 5 estudiantes con las calificaciones m\u00e1s altas y describe correctamente el proceso de inserci\u00f3n y actualizaci\u00f3n del mont\u00edculo.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que aborda directamente c\u00f3mo utilizar una cola de prioridad para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas. Adem\u00e1s, proporciona una estrategia clara y eficiente para realizar esta tarea.",
+                "razonamiento": "La respuesta es altamente relevante ya que aborda directamente la pregunta planteada y explica c\u00f3mo utilizar una cola de prioridad para resolver el problema dado de identificar a los 5 estudiantes con las calificaciones m\u00e1s altas.",
                 "puntaje": 3.0
             }
         }
@@ -806,15 +806,15 @@
             "pregunta": "Considera que tienes un mapa donde la clave es el nombre de una pel\u00edcula y el valor es una lista de actores. \u00bfC\u00f3mo implementar\u00edas una funci\u00f3n para encontrar todas las pel\u00edculas en las que trabaja un actor determinado?",
             "respuesta": "Se har\u00eda una b\u00fasqueda en todas las listas adyacentes a cada elemento del mapa. Cada vez que se encuentra el nombre del actor en alguna lista adyacente, el nombre de la pel\u00edcula es ingresado a una lista auxiliar y se deja de buscar en esa lista adyacente para seguir a la siguiente lista adyacente (de la siguiente pel\u00edcula).",
             "correctitud": {
-                "razonamiento": "La respuesta es correcta ya que propone una estrat\u00e9gia de b\u00fasqueda recursiva en las listas de actores adyacentes a cada pel\u00edcula en el mapa. Se utiliza una lista auxiliar para almacenar las pel\u00edculas en las que trabaja el actor.",
+                "razonamiento": "La respuesta proporcionada es correcta porque propone una forma adecuada de implementar la funci\u00f3n para encontrar todas las pel\u00edculas en las que trabaja un actor determinado. La soluci\u00f3n planteada aborda el problema de manera eficiente, revisando todas las listas adyacentes a cada elemento del mapa y agregando las pel\u00edculas correspondientes a una lista auxiliar cuando se encuentra el nombre del actor.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Explica de manera concisa c\u00f3mo realizar la b\u00fasqueda de las pel\u00edculas en las que trabaja el actor determinado.",
+                "razonamiento": "La respuesta proporcionada es clara y concisa. Explica de manera sencilla c\u00f3mo se realizar\u00eda la b\u00fasqueda y c\u00f3mo se agregar\u00edan las pel\u00edculas a una lista auxiliar.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que presenta una estrategia adecuada para resolver el problema planteado en la pregunta. Adem\u00e1s, se ajusta a la estructura de datos desconocida descrita en el enunciado.",
+                "razonamiento": "La respuesta es relevante ya que responde directamente a la pregunta planteada, mostrando un enfoque adecuado para implementar la funci\u00f3n solicitada.",
                 "puntaje": 3.0
             }
         }
@@ -824,17 +824,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Considere un conjunto de estudiantes con sus respectivas calificaciones. \u00bfC\u00f3mo podr\u00eda usar una cola de prioridad para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas?",
-            "respuesta": "Se implementa un cola de prioridad con los datos de los alumnos. Se recorre y se guardan los datos en una lista ordenada seg\u00fan calificaci\u00f3n en orden descendente. Se recorre la lista (firstList y nextList).",
+            "respuesta": "Se implementa un cola de prioridad con los datos de los alumnos. Se recorre y se guardan los datos en una lista ordenadas seg\u00fan calificaci\u00f3n en orden descendente. Se recorre la lista (firstList y nextList).",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta. Se menciona el uso de una cola de prioridad y c\u00f3mo implementarlo para identificar a los 5 estudiantes con las calificaciones m\u00e1s altas.",
+                "razonamiento": "La respuesta proporcionada es correcta. Propone el uso de una cola de prioridad para ordenar los estudiantes seg\u00fan sus calificaciones y luego recorre la lista resultante para identificar r\u00e1pidamente a los 5 estudiantes con las calificaciones m\u00e1s altas.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y concisa. Se explica de manera sencilla c\u00f3mo usar una cola de prioridad y c\u00f3mo se implementar\u00eda para identificar a los 5 estudiantes con las calificaciones m\u00e1s altas.",
+                "razonamiento": "La respuesta es clara y concisa. Explica de manera sencilla c\u00f3mo utilizar una cola de prioridad para identificar a los estudiantes con las calificaciones m\u00e1s altas.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta y explica c\u00f3mo utilizar una cola de prioridad para obtener los 5 estudiantes con las calificaciones m\u00e1s altas de manera eficiente.",
+                "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta planteada, proponiendo el uso de una cola de prioridad para resolver el problema.",
                 "puntaje": 3.0
             }
         }
@@ -844,17 +844,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Tenemos una lista de productos con su precio y categor\u00eda. \u00bfC\u00f3mo podr\u00edamos calcular el precio promedio por categor\u00eda usando un mapa?",
-            "respuesta": "Se podr\u00eda calcular recorriendo el mapa, y comprobando por cada producto si corresponde a la categor\u00eda buscada. Sumamos el valor del precio si corresponde a la categor\u00eda buscada y sumamos 1 a un contador que se inicializa en 0 para saber cu\u00e1ntos productos fueron sumados. Por \u00faltimo, dividimos la suma de los precios que corresponden a la categor\u00eda buscada por el contador para sacar el promedio.",
+            "respuesta": "Se podr\u00eda calcular recorriendo el mapa, y comprobando por cada producto si corresponde a la categor\u00eda buscada. Sumamos el valor del precio si corresponde a la categor\u00eda buscada y sumamos 1 a un contador que se inicializa en 0 para saber cuantos productos fueron sumados. Por \u00faltimo dividimos la suma de los precios que corresponden a la categor\u00eda buscada por el contador para sacar el promedio.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta",
+                "razonamiento": "Es correcto que se pueda recorrer el mapa y verificar la categor\u00eda de cada producto. Tambi\u00e9n es correcto sumar el precio del producto si corresponde a la categor\u00eda buscada y contar cu\u00e1ntos productos fueron sumados. Finalmente, se puede calcular el promedio dividiendo la suma de los precios por el contador. La respuesta es correcta.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender",
+                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Explica paso a paso c\u00f3mo se puede calcular el precio promedio por categor\u00eda usando un mapa. No hay ambig\u00fcedad en la explicaci\u00f3n. La respuesta es clara.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante para la pregunta",
+                "razonamiento": "La respuesta es relevante porque proporciona una soluci\u00f3n precisa y directa al problema planteado. Aborda espec\u00edficamente c\u00f3mo se puede calcular el precio promedio por categor\u00eda utilizando un mapa. La respuesta es relevante.",
                 "puntaje": 3.0
             }
         }
@@ -866,15 +866,15 @@
             "pregunta": "\u00bfC\u00f3mo podr\u00edamos implementar una funci\u00f3n que tome una lista de palabras y retorne las palabras ordenadas de acuerdo a su longitud? (use TDAs y no algoritmos de ordenamiento)",
             "respuesta": "se podr\u00eda implementar con una cola por prioridad siendo la prioridad la cantidad de letras, ocupando la funcion strlen(), as\u00ed la que tenga mayor cantidad de letras seria la primera en retornarse.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta porque propone utilizar una cola de prioridad, que permitir\u00eda ordenar las palabras seg\u00fan su longitud utilizando la funci\u00f3n strlen(). De esta manera, se garantiza que la palabra con mayor cantidad de letras sea la primera en ser retornada.",
+                "razonamiento": "La respuesta propuesta utiliza una implementaci\u00f3n correcta al utilizar una cola de prioridad y la funci\u00f3n strlen() para calcular la longitud de las palabras. Al trabajar con una cola de prioridad, las palabras se ordenar\u00e1n autom\u00e1ticamente de acuerdo a su longitud, de manera que la palabra con mayor longitud ser\u00e1 la primera en retornarse.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y concisa. Explica de manera sencilla c\u00f3mo implementar la funci\u00f3n utilizando una cola de prioridad y la funci\u00f3n strlen().",
+                "razonamiento": "La respuesta es clara y concisa al indicar que se debe utilizar una cola de prioridad y la funci\u00f3n strlen() para implementar la funci\u00f3n solicitada.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante porque utiliza una estructura de datos adecuada para resolver el problema planteado. La cola de prioridad permite ordenar las palabras seg\u00fan su longitud, cumpliendo con los requisitos de la pregunta.",
+                "razonamiento": "La respuesta es relevante ya que utiliza un enfoque adecuado para resolver el problema planteado, utilizando una estructura de datos espec\u00edfica (cola de prioridad) y una funci\u00f3n que es necesaria para calcular la longitud de las palabras (strlen()).",
                 "puntaje": 3.0
             }
         }
@@ -886,15 +886,15 @@
             "pregunta": "Suponga que tiene un conjunto de operaciones a realizar, cada una con un tiempo de duraci\u00f3n diferente. \u00bfC\u00f3mo podr\u00eda usar una cola de prioridad para ordenar las operaciones de manera que se realicen primero las m\u00e1s cortas?",
             "respuesta": "Se podria implementar un monticulo binario de minimos, en el cual el valor para ordenar los datos ser\u00eda el tiempo de duracion de cada tarea, de esta manera quedar\u00edan ordenadas de la mas corta a la mas larga",
             "correctitud": {
-                "razonamiento": "La respuesta es correcta ya que propone el uso de un mont\u00edculo binario de m\u00ednimos para implementar una cola de prioridad. Adem\u00e1s, menciona que el valor de ordenamiento ser\u00eda el tiempo de duraci\u00f3n de cada tarea, lo que garantiza que las tareas m\u00e1s cortas se realizar\u00edan primero.",
+                "razonamiento": "La respuesta es correcta, ya que menciona correctamente que se puede utilizar un mont\u00edculo binario de m\u00ednimos para implementar una cola de prioridad y que el valor para ordenar los datos ser\u00eda el tiempo de duraci\u00f3n de cada tarea.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y concisa. Explica de manera directa c\u00f3mo utilizar una cola de prioridad implementada con un mont\u00edculo binario de m\u00ednimos para ordenar las operaciones seg\u00fan su tiempo de duraci\u00f3n.",
+                "razonamiento": "La respuesta es clara y concisa, se entiende f\u00e1cilmente c\u00f3mo se puede utilizar la cola de prioridad para ordenar las operaciones por tiempo de duraci\u00f3n.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que proporciona una soluci\u00f3n adecuada a la pregunta planteada. Utilizar una cola de prioridad con un mont\u00edculo binario de m\u00ednimos es una forma eficiente y efectiva de ordenar las operaciones seg\u00fan su duraci\u00f3n.",
+                "razonamiento": "La respuesta es relevante, ya que menciona espec\u00edficamente c\u00f3mo se puede utilizar una cola de prioridad para solucionar el problema planteado en la pregunta.",
                 "puntaje": 3.0
             }
         }
@@ -906,15 +906,15 @@
             "pregunta": "Suponga que tiene un conjunto de operaciones a realizar, cada una con un tiempo de duraci\u00f3n diferente. \u00bfC\u00f3mo podr\u00eda usar una cola de prioridad para ordenar las operaciones de manera que se realicen primero las m\u00e1s cortas?",
             "respuesta": "Se podr\u00eda usar la implementaci\u00f3n de mont\u00edculo m\u00ednimo, en este caso, la prioridad ser\u00eda la duraci\u00f3n de cada tarea, mientras que el dato ser\u00eda la tarea en s\u00ed; de esta forma se ordenan los procesos de forma que se realizan primero las m\u00e1s cortas. Para realizar las acciones, se guarda el top del mont\u00edculo y se realiza la acci\u00f3n, luego se elimina la ra\u00edz del mont\u00edculo, esto har\u00e1 que la siguiente tarea a realizar sea las m\u00e1s corta en tiempo en el conjunto de tareas no realizadas; se repite este proceso hasta que el mont\u00edculo est\u00e9 vac\u00edo y se hayan procesado todas las tareas.",
             "correctitud": {
-                "razonamiento": "La respuesta propuesta es correcta porque utiliza la estructura de datos adecuada para resolver el problema. Utiliza una cola de prioridad implementada como un mont\u00edculo m\u00ednimo, donde la prioridad es el tiempo de duraci\u00f3n de cada tarea y el dato es la tarea en s\u00ed. Adem\u00e1s, la respuesta describe el proceso de realizar las acciones en orden de prioridad, guardando el elemento de mayor prioridad, eliminando la ra\u00edz del mont\u00edculo y repitiendo este proceso hasta que el mont\u00edculo est\u00e9 vac\u00edo. Este enfoque garantiza que las tareas m\u00e1s cortas se realicen primero.",
+                "razonamiento": "La respuesta es correcta porque propone el uso de una cola de prioridad implementada con un mont\u00edculo m\u00ednimo, donde las tareas se ordenen seg\u00fan su duraci\u00f3n. Adem\u00e1s, se explica c\u00f3mo se realizan las operaciones utilizando el mont\u00edculo para asegurar que las tareas m\u00e1s cortas se realicen primero.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y proporciona una explicaci\u00f3n detallada del enfoque propuesto. Describe c\u00f3mo utilizar una cola de prioridad implementada como un mont\u00edculo m\u00ednimo para ordenar las operaciones seg\u00fan la duraci\u00f3n de cada tarea. Tambi\u00e9n explica de manera concisa el proceso de realizar las acciones en orden de prioridad utilizando el mont\u00edculo. La respuesta utiliza un lenguaje claro y comprensible.",
+                "razonamiento": "La respuesta es clara y concisa. Se explica de forma precisa c\u00f3mo utilizar una cola de prioridad implementada con un mont\u00edculo m\u00ednimo para ordenar las operaciones seg\u00fan su duraci\u00f3n. Adem\u00e1s, se describe el proceso de realizar las operaciones utilizando el mont\u00edculo, lo cual facilita la comprensi\u00f3n del enfoque propuesto.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es altamente relevante ya que aborda el problema espec\u00edfico de ordenar operaciones con base en su tiempo de duraci\u00f3n utilizando una cola de prioridad. Proporciona una soluci\u00f3n espec\u00edfica y adecuada utilizando una estructura de datos apropiada. Esta respuesta es directamente aplicable al problema planteado y proporciona una forma efectiva de abordarlo.",
+                "razonamiento": "La respuesta es altamente relevante ya que aborda directamente el uso de una cola de prioridad para ordenar las operaciones por su duraci\u00f3n. Este enfoque es especialmente \u00fatil cuando se tienen operaciones con diferentes tiempos de duraci\u00f3n y se requiere dar prioridad a las m\u00e1s cortas. Adem\u00e1s, se propone una estructura espec\u00edfica (mont\u00edculo m\u00ednimo) para implementar la cola de prioridad.",
                 "puntaje": 3.0
             }
         }
@@ -926,15 +926,15 @@
             "pregunta": "\u00bfC\u00f3mo podr\u00edamos implementar una funci\u00f3n que tome una lista de palabras y retorne las palabras ordenadas de acuerdo a su longitud? (use TDAs y no algoritmos de ordenamiento)",
             "respuesta": "Se podria usar un arbol binario donde cada nodo del arbol sea la palabra, ademas de tener un bool o contador que verifique que esta palabra no exista en otra parte del arbol. Cada vez que se inserte una palabra nueva, es decir, un nuevo nodo, se compare con la palabra anterior insertada y las demas que existan en el arbol, y se ordene de forma indicada. Finalmente se podria imprimir todas las palabras existentes en el arbol ordenadas por su longitud, para hacer esto se tendria que recorrer el arbol y guardar en una lista las palabras, ademas de ordenarlas, para luego imprimirlas.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta ya que propone usar un \u00e1rbol binario para almacenar las palabras y ordenarlas de acuerdo a su longitud.",
+                "razonamiento": "La respuesta proporcionada es correcta, ya que propone utilizar un \u00e1rbol binario para almacenar las palabras y mantenerlas ordenadas seg\u00fan su longitud. Adem\u00e1s, menciona la implementaci\u00f3n de un booleano o contador para verificar si una palabra ya existe en el \u00e1rbol. Tambi\u00e9n se menciona la idea de recorrer el \u00e1rbol y guardar las palabras en una lista para finalmente imprimirlas ordenadas. Todos estos elementos son correctos y adecuados para resolver el problema planteado.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Proporciona una explicaci\u00f3n detallada de c\u00f3mo implementar la funci\u00f3n utilizando un \u00e1rbol binario.",
+                "razonamiento": "La respuesta proporcionada es clara y comprensible. Se explica de manera concisa el uso de un \u00e1rbol binario para almacenar y ordenar las palabras, as\u00ed como el detalle de utilizar un booleano o contador para evitar duplicados. Tambi\u00e9n se menciona de forma clara y secuencial c\u00f3mo se podr\u00edan imprimir las palabras ordenadas. En general, la respuesta es f\u00e1cil de entender y seguir.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que propone una soluci\u00f3n adecuada para el problema planteado utilizando TDAs y no algoritmos de ordenamiento.",
+                "razonamiento": "La respuesta es relevante, ya que proporciona una soluci\u00f3n espec\u00edfica al problema planteado utilizando un \u00e1rbol binario. Este enfoque es adecuado para el problema de ordenar las palabras por longitud, ya que el \u00e1rbol binario permite mantener las palabras ordenadas de manera eficiente y r\u00e1pida. Adem\u00e1s, se menciona la idea de evitar duplicados al utilizar un booleano o contador. En resumen, la respuesta aborda directamente el problema planteado y propone una soluci\u00f3n adecuada.",
                 "puntaje": 3.0
             }
         }
@@ -944,17 +944,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Describa c\u00f3mo se puede utilizar un conjunto o mapa para verificar si una lista tiene elementos duplicados.",
-            "respuesta": "se podr\u00eda utilizar como un mapa, ya que para verificar los elementos duplicados es conveniente. Inicializa un conjunto vac\u00edo o un mapa vac\u00edo, dependiendo de si se desea simplemente verificar duplicados o tambi\u00e9n rastrear la frecuencia de los elementos duplicados. Recorre la lista elemento por elemento. Para cada elemento de la lista, verifica si ya est\u00e1 presente en el conjunto o mapa utilizando la operaci\u00f3n de b\u00fasqueda (como \"contains\" en un conjunto o verificar si la clave existe en el mapa).\n\nSi el elemento ya est\u00e1 presente, significa que hay un duplicado en la lista. Puedes tomar acciones como terminar la verificaci\u00f3n y reportar el resultado o llevar un registro de los elementos duplicados y su frecuencia en el mapa.\n\nSi el elemento no est\u00e1 presente, agr\u00e9galo al conjunto o mapa.\n\nUna vez que se ha recorrido toda la lista, se habr\u00e1 verificado si hay duplicados. El conjunto o mapa contendr\u00e1 todos los elementos \u00fanicos de la lista, y se puede consultar para obtener informaci\u00f3n adicional, como la frecuencia de los elementos duplicados.",
+            "respuesta": "Se podr\u00eda utilizar un conjunto o mapa como una estructura de datos auxiliar para verificar si una lista tiene elementos duplicados. Se inicializa un conjunto o mapa vac\u00edo y luego se recorre la lista elemento por elemento. Para cada elemento, se verifica si ya est\u00e1 presente en el conjunto o mapa utilizando una operaci\u00f3n de b\u00fasqueda. Si el elemento ya est\u00e1 presente, significa que hay un duplicado en la lista. Si el elemento no est\u00e1 presente, se agrega al conjunto o mapa. Al finalizar el recorrido de la lista, se habr\u00e1 verificado si hay duplicados, ya que el conjunto o mapa solo contendr\u00e1 elementos \u00fanicos.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada explica de manera clara y precisa c\u00f3mo utilizar un conjunto o mapa para verificar si una lista tiene elementos duplicados. El procedimiento descrito es correcto y aborda los pasos necesarios para realizar la verificaci\u00f3n. Explica que se puede utilizar un conjunto o un mapa dependiendo de si se quiere simplemente verificar duplicados o tambi\u00e9n rastrear la frecuencia de los elementos duplicados. Adem\u00e1s, se\u00f1ala la importancia de recorrer la lista por elemento y utilizar operaciones de b\u00fasqueda para determinar si un elemento ya est\u00e1 presente en el conjunto o mapa. Tambi\u00e9n menciona la opci\u00f3n de tomar acciones espec\u00edficas cuando se encuentra un duplicado, como terminar la verificaci\u00f3n o llevar un registro de los elementos duplicados y su frecuencia. En general, la respuesta muestra un buen entendimiento del uso de conjuntos y mapas para verificar duplicados en una lista.",
+                "razonamiento": "La respuesta proporcionada explica correctamente c\u00f3mo utilizar un conjunto o mapa para verificar duplicados en una lista. Se menciona la inicializaci\u00f3n de la estructura de datos auxiliar, la iteraci\u00f3n sobre la lista, la b\u00fasqueda de elementos en el conjunto o mapa y las acciones a tomar dependiendo de si el elemento est\u00e1 presente o no. Adem\u00e1s, se menciona que al finalizar el recorrido de la lista, el conjunto o mapa solo contendr\u00e1 elementos \u00fanicos, lo cual es correcto.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta est\u00e1 escrita de manera clara y f\u00e1cil de entender. Se utilizan t\u00e9rminos adecuados y se explica cada paso de manera concisa. No hay ambig\u00fcedades ni falta de claridad en la explicaci\u00f3n, lo que facilita la comprensi\u00f3n del proceso.",
+                "razonamiento": "La respuesta proporcionada es clara y f\u00e1cil de entender. Se utiliza un lenguaje sencillo y se explica paso a paso c\u00f3mo utilizar un conjunto o mapa para verificar duplicados en una lista. Adem\u00e1s, se mencionan los casos en los que se puede utilizar un conjunto o mapa, dependiendo si solo se desea verificar duplicados o tambi\u00e9n se desea rastrear la frecuencia de los elementos duplicados.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante para la pregunta planteada, ya que proporciona un enfoque claro y directo para utilizar un conjunto o mapa en la verificaci\u00f3n de duplicados en una lista. Adem\u00e1s, explica la importancia de tener en cuenta si se desea solo verificar duplicados o tambi\u00e9n rastrear la frecuencia de los elementos duplicados, lo cual es muy \u00fatil para determinar la relevancia de la respuesta en diferentes escenarios.",
+                "razonamiento": "La respuesta proporcionada es relevante, ya que describe c\u00f3mo utilizar un conjunto o mapa espec\u00edficamente para verificar duplicados en una lista. La explicaci\u00f3n se centra en el uso de la estructura de datos auxiliar y c\u00f3mo realizar la verificaci\u00f3n elemento por elemento en la lista. Tambi\u00e9n se menciona la posibilidad de rastrear la frecuencia de los elementos duplicados utilizando un mapa.",
                 "puntaje": 3.0
             }
         }
@@ -964,17 +964,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Suponga que tiene un conjunto de operaciones a realizar, cada una con un tiempo de duraci\u00f3n diferente. \u00bfC\u00f3mo podr\u00eda usar una cola de prioridad para ordenar las operaciones de manera que se realicen primero las m\u00e1s cortas?",
-            "respuesta": "Se puede guardar cada tiempo en una struct el nombre de la operaci\u00f3n seria el dato asociado\n\nIngresar\u00eda los el primer tiempo dentro de la cola, la prioridad de la cola serian los tiempos de duraci\u00f3n (menor tiempo mayor prioridad), y luego se extraer\u00eda el primer elemento de la cola que seria la operaci\u00f3n con menor duraci\u00f3n.",
+            "respuesta": "Se puede guardar cada tiempo en una struct el nombre de la operaci\u00f3n seria el dato asociado\r\nIngresar\u00eda los el primer tiempo dentro de la cola, la prioridad de la cola serian los tiempos de duraci\u00f3n (menor tiempo mayor prioridad), y luego se extraer\u00eda el primer elemento de la cola que seria la operaci\u00f3n con menor duraci\u00f3n.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada muestra una forma adecuada de utilizar una cola de prioridad para ordenar las operaciones seg\u00fan su duraci\u00f3n. Se propone guardar cada tiempo en una estructura, donde el nombre de la operaci\u00f3n ser\u00eda el dato asociado. Luego, se ingresar\u00eda el primer tiempo dentro de la cola, asignando como prioridad los tiempos de duraci\u00f3n (menor tiempo, mayor prioridad). Posteriormente, se extraer\u00eda el primer elemento de la cola, que ser\u00eda la operaci\u00f3n con menor duraci\u00f3n. Este enfoque es correcto y permite ordenar las operaciones de manera eficiente.",
+                "razonamiento": "La respuesta proporcionada muestra un correcto entendimiento de c\u00f3mo utilizar una cola de prioridad para ordenar las operaciones seg\u00fan su tiempo de duraci\u00f3n. Explica que se podr\u00eda utilizar una estructura que guarde el tiempo y el nombre de la operaci\u00f3n, y luego se ingresar\u00edan los tiempos a la cola de prioridad. La cola est\u00e1 priorizada de manera que el menor tiempo tenga mayor prioridad, por lo que se extraer\u00eda la operaci\u00f3n con menor duraci\u00f3n para realizarla primero, lo cual es una soluci\u00f3n adecuada.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta proporcionada es clara y f\u00e1cil de entender. Se explica paso a paso c\u00f3mo utilizar una cola de prioridad para ordenar las operaciones seg\u00fan su duraci\u00f3n. Adem\u00e1s, se utiliza un lenguaje claro y conciso, lo que facilita la comprensi\u00f3n de la soluci\u00f3n propuesta.",
+                "razonamiento": "La respuesta est\u00e1 redactada de manera clara y concisa. Describe de forma precisa c\u00f3mo utilizar una cola de prioridad para ordenar las operaciones seg\u00fan su tiempo de duraci\u00f3n. Incluye un ejemplo para ilustrar el proceso.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta proporcionada es relevante para la pregunta planteada, ya que aborda de manera directa c\u00f3mo utilizar una cola de prioridad para ordenar las operaciones seg\u00fan su duraci\u00f3n. Proporciona una soluci\u00f3n espec\u00edfica y adecuada para el problema planteado.",
+                "razonamiento": "La respuesta es relevante ya que aborda espec\u00edficamente el uso de una cola de prioridad para ordenar las operaciones seg\u00fan su tiempo de duraci\u00f3n. Proporciona una soluci\u00f3n apropiada para el problema planteado en la pregunta.",
                 "puntaje": 3.0
             }
         }
@@ -984,18 +984,18 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Imagina que tienes un mapa con las calificaciones de los estudiantes, donde la clave es el nombre del estudiante y el valor es su calificaci\u00f3n. \u00bfC\u00f3mo podr\u00edas implementar una funci\u00f3n para encontrar a todos los estudiantes que aprobaron (calificaci\u00f3n mayor a 5)?",
-            "respuesta": "No proporcionada",
+            "respuesta": "Se puede implementar mediante una tabla hash con el nombre de los estudiantes como clave y su respectivo calificaci\u00f3n como el dato. Como no necesariamente tiene que estar ordenado este mapa, se puede hacer una b\u00fasqueda con el dato de cada elemento de la tabla (por que es eficiente de todas formas con su compeljidad temporal o(1)), y comparar si el dato buscado es mayor a 5.",
             "correctitud": {
-                "razonamiento": "No se proporcion\u00f3 una respuesta a la pregunta.",
-                "puntaje": 0.0
+                "razonamiento": "La respuesta es correcta. Propone utilizar una tabla hash para representar el mapa de las calificaciones de los estudiantes. Utiliza la b\u00fasqueda en la tabla hash para encontrar a los estudiantes que aprobaron.",
+                "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "No se proporcion\u00f3 una respuesta a la pregunta.",
-                "puntaje": 0.0
+                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Explica de manera concisa c\u00f3mo se puede implementar una funci\u00f3n para encontrar a los estudiantes que aprobaron utilizando una tabla hash y realizando una b\u00fasqueda en ella.",
+                "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "No se proporcion\u00f3 una respuesta a la pregunta.",
-                "puntaje": 0.0
+                "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta planteada. Propone una implementaci\u00f3n apropiada utilizando la estructura necesaria (tabla hash) y explica c\u00f3mo realizar la b\u00fasqueda para encontrar a los estudiantes que aprobaron.",
+                "puntaje": 3.0
             }
         }
     },
@@ -1004,17 +1004,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "\u00bfC\u00f3mo implementar\u00eda una cola de prioridad para administrar las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico, donde los clientes VIP tienen la m\u00e1s alta prioridad, seguidos por los clientes habituales y luego los nuevos clientes?",
-            "respuesta": "Se puede implementar una cola con prioridad utilizando 2 pilas.\n\n- Al momento de ingresar los pacientes, se ingresa el nombre del paciente y la prioridad establecida en enteros (p.ej: VIP = 1, Clientes Habituales = 2 y Nuevos clientes = 3).\n\n- Se agregan los pacientes a la pila 1.\n\n- Cada vez que se agrega un nuevo paciente se compara con la cima de la pila 1, si el paciente ingresado tiene una prioridad mayor a la cima de la pila 1, la cima se desapila y se apila a la pila 2, hasta encontrar una posicion correcta en la cola de prioridad.\n\n- Luego se desapilan todos los datos de la pila 2, y se vuelven a apilar a la 1.\n\n- Para la Eliminacion, se debe pasar toda la pila 1 a la pila 2, y posteriormente ir eliminando la cima de esta.",
+            "respuesta": "Se puede implementar una cola con prioridad utilizando 2 pilas.\n\n- Al momento de ingresar los pacientes, se ingresa el nombre del paciente y la prioridad establecida en enteros (p.ej: VIP = 1, Clientes Habituales = 2 y Nuevos clientes = 3).\n\n- Se agregan los pacientes a la pila 1.\n\n- Cada vez que se agrega un nuevo paciente se compara con la cima de la pila 1, si el paciente ingresado tiene una prioridad mayor a la cima de la pila 1, la cima se desapila y se apila a la pila 2, hasta encontrar una posici\u00f3n correcta en la cola de prioridad.\n\n- Luego se desapilan todos los datos de la pila 2, y se vuelven a apilar a la 1.\n\n- Para la eliminaci\u00f3n, se debe pasar toda la pila 1 a la pila 2, y posteriormente ir eliminando la cima de esta.",
             "correctitud": {
-                "razonamiento": "La implementaci\u00f3n propuesta permite gestionar una cola de prioridad utilizando dos pilas. Al comparar la prioridad de un nuevo elemento con la cima de la pila, se asegura que los elementos ingresados se ordenen correctamente en la cola de prioridad. Adem\u00e1s, al desapilar y volver a apilar los elementos en la pila 2, se garantiza que los elementos se vuelvan a ordenar de acuerdo a sus prioridades. En cuanto a la eliminaci\u00f3n, al pasar los elementos de la pila 1 a la pila 2 y eliminar la cima de la pila 2, se asegura que se atienda a los clientes en orden de prioridad.",
-                "puntaje": 3.0
+                "razonamiento": "La respuesta proporciona una posible implementaci\u00f3n del problema planteado. Se utilizan dos pilas para implementar la cola con prioridad y se describe el proceso de agregar y eliminar pacientes de acuerdo a su prioridad. Aunque no se proporciona c\u00f3digo o pseudoc\u00f3digo, la explicaci\u00f3n general es correcta.",
+                "puntaje": 2.5
             },
             "claridad": {
-                "razonamiento": "La respuesta proporciona una explicaci\u00f3n clara y concisa sobre c\u00f3mo se podr\u00eda implementar una cola de prioridad utilizando dos pilas. Se detallan los pasos necesarios para lograrlo, desde ingreso de elementos hasta su eliminaci\u00f3n. La respuesta est\u00e1 estructurada de manera ordenada y se utiliza un lenguaje sencillo, lo que facilita su comprensi\u00f3n.",
-                "puntaje": 3.0
+                "razonamiento": "La respuesta es clara y describe paso a paso c\u00f3mo se puede implementar una cola con prioridad utilizando dos pilas. Los conceptos clave, como la comparaci\u00f3n de prioridades y el proceso de apilar y desapilar elementos en las pilas, se explican de manera comprensible. Sin embargo, la respuesta podr\u00eda mejorar si se proporcionara un ejemplo o se incluyera alg\u00fan diagrama para visualizar mejor el proceso.",
+                "puntaje": 2.5
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante para la pregunta planteada, ya que propone una soluci\u00f3n concreta y espec\u00edfica para implementar una cola de prioridad en un sistema de soporte t\u00e9cnico. Adem\u00e1s, la explicaci\u00f3n se enfoca en c\u00f3mo se manejar\u00eda la prioridad de los clientes en la cola, lo cual es fundamental para administrar las solicitudes de atenci\u00f3n al cliente.",
+                "razonamiento": "La respuesta es relevante para la pregunta planteada, ya que ofrece una forma de implementar una cola con prioridad para administrar las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico. La descripci\u00f3n de utilizar dos pilas y comparar prioridades es espec\u00edfica para el problema planteado.",
                 "puntaje": 3.0
             }
         }
@@ -1026,15 +1026,15 @@
             "pregunta": "Tenemos una lista de productos con su precio y categor\u00eda. \u00bfC\u00f3mo podr\u00edamos calcular el precio promedio por categor\u00eda usando un mapa?",
             "respuesta": "Se puede recorrer el mapa comprobando que en cada producto la categor\u00eda sea la que se quiera calcular. Si es la categor\u00eda buscada, se suma el precio a una variable que vaya sumando todos los precios y se agrega uno a un contador que cuente la cantidad de productos recorridos, si no es la categor\u00eda buscada se sigue con el pr\u00f3ximo dato. Se realizan estos pasos en un ciclo hasta que el pr\u00f3ximo valor del mapa sea nulo. Luego, tomamos la variable que sumaba los precios y la dividimos con el contador que contaba la cantidad de datos recorridos para finalmente tener el promedio de precio para una categor\u00eda de productos.",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada explica correctamente c\u00f3mo calcular el precio promedio por categor\u00eda. Describe un proceso adecuado que recorre el mapa y suma los precios de los productos en la categor\u00eda seleccionada, luego divide esa suma por el contador de productos en esa categor\u00eda.",
+                "razonamiento": "La respuesta proporcionada es correcta, ya que explica de manera clara y concisa c\u00f3mo calcular el precio promedio por categor\u00eda utilizando un mapa. Se menciona correctamente el proceso necesario para recorrer el mapa, sumar los precios y contar la cantidad de productos recorridos, y luego calcular el promedio dividiendo la suma de los precios entre la cantidad de productos.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara en la descripci\u00f3n del proceso. Se entiende de manera precisa c\u00f3mo se realiza el c\u00e1lculo utilizando el mapa y los datos de categor\u00eda y precio de los productos.",
+                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Se explica paso a paso c\u00f3mo realizar el c\u00e1lculo del precio promedio por categor\u00eda utilizando un mapa. Se utilizan t\u00e9rminos adecuados y se evita el uso de jerga o lenguaje t\u00e9cnico innecesario.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que aborda directamente el c\u00e1lculo del precio promedio por categor\u00eda utilizando un mapa. Proporciona una soluci\u00f3n espec\u00edfica y adecuada al problema planteado en la pregunta.",
+                "razonamiento": "La respuesta es relevante ya que aborda directamente la pregunta planteada y proporciona una soluci\u00f3n precisa al problema. Explica c\u00f3mo utilizar un mapa para realizar el c\u00e1lculo del precio promedio por categor\u00eda, lo cual es adecuado considerando la estructura de datos desconocida.",
                 "puntaje": 3.0
             }
         }
@@ -1044,17 +1044,17 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Teniendo un mapa de estudiantes donde la clave es el n\u00famero de matr\u00edcula y el valor es la nota final. \u00bfC\u00f3mo podr\u00edas calcular la nota promedio de todos los estudiantes?",
-            "respuesta": "Tendr\u00eda una variable contador y otra sumaNotas que guarde la suma de las notas. Luego recorrer\u00eda el mapa usando firstMap() y nextMap(), y al final retornar\u00eda un float sumaNotas/contador",
+            "respuesta": "Tendria una variable contador, y otra sumaNotas que guarde la suma de las notas. Luego recorreria el mapa usando firstMap() y nextMap() al final retornaria un float sumaNotas/contador",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada correctamente explica c\u00f3mo calcular la nota promedio de todos los estudiantes utilizando un enfoque basado en variables contador y suma de notas, y recorriendo el mapa de estudiantes.",
+                "razonamiento": "La respuesta proporcionada es correcta ya que utiliza una variable contador y una variable sumaNotas para almacenar la cantidad de estudiantes y la suma de todas las notas, respectivamente. Adem\u00e1s, recorre el mapa utilizando los m\u00e9todos firstMap() y nextMap() para obtener todas las notas. Finalmente, calcula la nota promedio dividiendo la suma de las notas entre la cantidad de estudiantes.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y presenta el enfoque de manera concisa.",
+                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. La describe paso a paso y utiliza variables descriptivas para almacenar la informaci\u00f3n necesaria.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que proporciona una soluci\u00f3n para calcular la nota promedio de todos los estudiantes, que es directamente aplicable a la estructura/mapa de estudiantes mencionada en la pregunta.",
+                "razonamiento": "La respuesta es altamente relevante ya que proporciona una soluci\u00f3n correcta y precisa para calcular la nota promedio de todos los estudiantes en un mapa.",
                 "puntaje": 3.0
             }
         }
@@ -1066,15 +1066,15 @@
             "pregunta": "\u00bfC\u00f3mo implementar\u00eda una cola de prioridad para administrar las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico, donde los clientes VIP tienen la m\u00e1s alta prioridad, seguidos por los clientes habituales y luego los nuevos clientes?",
             "respuesta": "una cola con prioridad implementada con un mont\u00edculo binario y en cada posici\u00f3n del mont\u00edculo  existe una lista con los clientes que tiene esa prioridad cuando se necesita atender a clientes se extrae la posici\u00f3n con mas prioridad y se recorre la lista para atender a los clientes, ejemplo los clientes vip tienen prioridad 3 los habituales tienen prioridad 2 y los nuevos clientes prioridad 1,al extraer se va a extraer la lista con los clientes vip (si es que existen, en caso contrario se extraer\u00e1 la siguiente prioridad)y cuando se termine con ellos siguen los clientes habituales ,as\u00ed sucesivamente hasta que el mont\u00edculo este vac\u00edo",
             "correctitud": {
-                "razonamiento": "La respuesta brinda una implementaci\u00f3n adecuada para la administraci\u00f3n de las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico, utilizando una cola con prioridad implementada con un mont\u00edculo binario y una lista para cada posici\u00f3n del mont\u00edculo que representa una prioridad. Tambi\u00e9n se explica c\u00f3mo se extraen y gestionan las solicitudes, atendiendo primero a los clientes VIP, luego a los clientes habituales y finalmente a los nuevos clientes.",
+                "razonamiento": "La respuesta proporcionada aborda correctamente la implementaci\u00f3n de una cola de prioridad utilizando un mont\u00edculo binario.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y presenta de manera concisa la implementaci\u00f3n propuesta utilizando un mont\u00edculo binario y una lista para cada posici\u00f3n. Tambi\u00e9n se explica de manera clara c\u00f3mo se extraen y atienden las solicitudes seg\u00fan la prioridad de los clientes.",
+                "razonamiento": "La respuesta proporcionada es clara y f\u00e1cil de entender. Se describen los pasos involucrados en la implementaci\u00f3n de la cola de prioridad.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es altamente relevante, ya que aborda directamente la pregunta y proporciona una implementaci\u00f3n espec\u00edfica para administrar las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico con diferentes niveles de prioridad.",
+                "razonamiento": "La respuesta es relevante ya que aborda directamente la implementaci\u00f3n de una cola de prioridad para administrar las solicitudes de atenci\u00f3n al cliente en un sistema de soporte t\u00e9cnico.",
                 "puntaje": 3.0
             }
         }
@@ -1083,19 +1083,19 @@
         "student_id": "BARRETO HORN",
         "evaluation": {
             "estructura": "Desconocido",
-            "pregunta": "\u00bfC\u00f3mo podr\u00edamos implementar una funci\u00f3n que tome una lista de palabras y retorne las palabras ordenadas de acuerdo a su longitud? (use TDAs y no algoritmos de ordenamiento)",
+            "pregunta": "\u00bfC\u00f3mo podr\u00edamos implementar una funci\u00f3n que tome una lista de palabras y retorne las palabras ordenadas de acuerdo a su longitud?",
             "respuesta": "usamos un mont\u00edculo binario con una pila, donde se ir\u00e1n insertando de menor a mayor los datos en la pila y luego se mostrar\u00e1n los datos de la pila que estar\u00e1n ordenadas de mayor a menor acordes a su longitud",
             "correctitud": {
-                "razonamiento": "La respuesta no es correcta ya que menciona el uso de un mont\u00edculo binario y una pila, pero no se explica c\u00f3mo se relacionan o c\u00f3mo se implementa la funci\u00f3n que ordena las palabras.",
-                "puntaje": 0.0
-            },
-            "claridad": {
-                "razonamiento": "La respuesta es poco clara y confusa ya que no se proporciona una explicaci\u00f3n detallada sobre c\u00f3mo implementar la funci\u00f3n o c\u00f3mo se utilizan las estructuras mencionadas.",
+                "razonamiento": "La respuesta proporciona una idea general de c\u00f3mo implementar la funci\u00f3n utilizando un mont\u00edculo binario y una pila. Sin embargo, no se explica de manera detallada c\u00f3mo se realizar\u00eda la inserci\u00f3n de los datos ni c\u00f3mo se mostrar\u00edan ordenados. Adem\u00e1s, no se menciona c\u00f3mo se manejar\u00edan las palabras de igual longitud.",
                 "puntaje": 1.0
             },
+            "claridad": {
+                "razonamiento": "La respuesta es breve y concisa, pero no proporciona suficiente informaci\u00f3n para comprender completamente c\u00f3mo se implementar\u00eda la funci\u00f3n.",
+                "puntaje": 2.0
+            },
             "relevancia": {
-                "razonamiento": "La respuesta no es relevante ya que no proporciona una soluci\u00f3n satisfactoria a la pregunta planteada.",
-                "puntaje": 0.0
+                "razonamiento": "La respuesta es relevante ya que menciona el uso de una estructura de datos (mont\u00edculo binario y pila) para resolver el problema planteado.",
+                "puntaje": 3.0
             }
         }
     },
@@ -1106,15 +1106,15 @@
             "pregunta": "Tenemos una lista de personas con su nombre y pa\u00eds de origen. \u00bfC\u00f3mo podr\u00edamos agrupar a las personas por pa\u00eds utilizando un mapa?",
             "respuesta": "usaremos una tabla hash cuya clave para poder acceder a los datos sea su pa\u00eds de origen, mientras que los datos almacenados sea una lista de las personas procedentes de ese pa\u00eds",
             "correctitud": {
-                "razonamiento": "La respuesta proporcionada es correcta ya que propone utilizar un mapa (tabla hash) donde la clave para acceder a los datos sea el pa\u00eds de origen y los datos almacenados sean una lista de las personas de ese pa\u00eds.",
+                "razonamiento": "La respuesta proporcionada es correcta y adecuada para la pregunta. Propone utilizar un mapa (tabla hash) donde la clave sea el pa\u00eds de origen y los valores sean una lista de las personas procedentes de ese pa\u00eds. Esta soluci\u00f3n permite agrupar a las personas por pa\u00eds utilizando un mapa.",
                 "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "La respuesta es clara y f\u00e1cil de entender. Se explica de manera concisa c\u00f3mo utilizar un mapa para agrupar a las personas por pa\u00eds.",
+                "razonamiento": "La respuesta es clara y concisa. Describe de forma precisa como utilizar un mapa para agrupar a las personas por pa\u00eds.",
                 "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "La respuesta es relevante ya que proporciona una soluci\u00f3n adecuada al problema planteado, utilizando una estructura de datos apropiada (mapa) para agrupar las personas por pa\u00eds.",
+                "razonamiento": "La respuesta es muy relevante ya que proporciona una soluci\u00f3n adecuada para agrupar a las personas por pa\u00eds utilizando un mapa. Esto demuestra un buen entendimiento de la estructura y su aplicabilidad en el contexto dado.",
                 "puntaje": 3.0
             }
         }
@@ -1124,18 +1124,18 @@
         "evaluation": {
             "estructura": "Desconocido",
             "pregunta": "Tenemos una lista de personas con su nombre y pa\u00eds de origen. \u00bfC\u00f3mo podr\u00edamos agrupar a las personas por pa\u00eds utilizando un mapa?",
-            "respuesta": "No proporcionada",
+            "respuesta": "usar\u00edamos un mapa que cada casilla tenga listas, las claves serian el pa\u00eds de origen y las listas de la casilla guardar\u00edan los nombres de las personas",
             "correctitud": {
-                "razonamiento": "No se proporcion\u00f3 respuesta.",
-                "puntaje": 0.0
+                "razonamiento": "La respuesta es correcta, ya que propone utilizar un mapa donde las claves ser\u00edan los pa\u00edses de origen y los valores asociados ser\u00edan listas de nombres de personas.",
+                "puntaje": 3.0
             },
             "claridad": {
-                "razonamiento": "No se proporcion\u00f3 respuesta.",
-                "puntaje": 0.0
+                "razonamiento": "La respuesta es clara, ya que describe de manera concisa c\u00f3mo se podr\u00eda agrupar a las personas por pa\u00eds utilizando un mapa.",
+                "puntaje": 3.0
             },
             "relevancia": {
-                "razonamiento": "No se proporcion\u00f3 respuesta.",
-                "puntaje": 0.0
+                "razonamiento": "La respuesta es totalmente relevante, ya que responde directamente a la pregunta planteada.",
+                "puntaje": 3.0
             }
         }
     }
